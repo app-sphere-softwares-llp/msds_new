@@ -61,7 +61,7 @@ export class CommonLayoutComponent  {
                 path += route.routeConfig.path;
             }
         } else {
-            label = 'Dashboard';
+            label = 'Search';
             path += 'dashboard';
         }
 

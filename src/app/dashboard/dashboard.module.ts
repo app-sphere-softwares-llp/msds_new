@@ -6,18 +6,21 @@ import { ThemeConstantService } from '../shared/services/theme-constant.service'
 
 import { DefaultDashboardComponent } from './default/default-dashboard.component';
 import { WithBreadcrumbDashboardComponent } from './with-breadcrumb/with-breadcrumb-dashboard.component';
+import { ResultComponent } from './result/result.component';
 
 
 @NgModule({
     imports: [
         CommonModule,
         SharedModule,
-        DashboardRoutingModule,
+        DashboardRoutingModule
+     
     ],
     exports: [],
     declarations: [
         DefaultDashboardComponent,
-        WithBreadcrumbDashboardComponent
+        WithBreadcrumbDashboardComponent,
+        ResultComponent
     ],
     providers: [
         ThemeConstantService

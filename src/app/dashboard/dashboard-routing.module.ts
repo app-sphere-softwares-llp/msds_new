@@ -3,13 +3,14 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { DefaultDashboardComponent } from './default/default-dashboard.component';
 import { WithBreadcrumbDashboardComponent } from './with-breadcrumb/with-breadcrumb-dashboard.component';
+import { ResultComponent } from './result/result.component';
 
 const routes: Routes = [
     {
         path: 'default',
         component: DefaultDashboardComponent,
         data: {
-            title: 'Dashboard ',
+            title: 'Search  ',
             headerDisplay: "none"
         }
     },
@@ -18,6 +19,13 @@ const routes: Routes = [
         component: WithBreadcrumbDashboardComponent,
         data: {
             title: 'With Breadcrumb '
+        }
+    },
+    {
+        path: 'result',
+        component: ResultComponent,
+        data: {
+            title: 'Search Results '
         }
     }
 ];

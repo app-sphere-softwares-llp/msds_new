@@ -1,4 +1,4 @@
-export interface WercsExtract {
+export class WercsExtract {
   Id: number;
   PDFName: string;
   Language: string;
@@ -48,22 +48,30 @@ export interface WercsExtract {
   Path: string;
 }
 
-export interface WercsExtractSearchModel extends WercsExtract {
+
+export class RevisionDate {
+  FilterType: string;
+  StartDate: Date | string | null;
+  EndDate: Date | string | null;
+  LastRevisionDays: number | null;
+}
+
+export class PublishedDate {
+  FilterType: string;
+  StartDate: Date | string | null;
+  EndDate: Date | string | null;
+  LastPublishDays: number;
+}
+
+export class WercsExtractSearchModel extends WercsExtract {
     RevisionDateFilter: RevisionDate;
     PublishDateFilter: PublishedDate;
+    SelectedDateType: 'A' | 'B';
+    constructor() {
+      super();
+      this.RevisionDateFilter = new RevisionDate();
+      this.PublishDateFilter = new PublishedDate();
+    }
   }
 
-  export interface RevisionDate {
-    FilterType: string;
-    StartDate: Date | string | null;
-    EndDate: Date | string | null;
-    LastRevisionDays: number | null;
-  }
-
-  export interface PublishedDate {
-    FilterType: string;
-    StartDate: Date | string | null;
-    EndDate: Date | string | null;
-    LastPublishDays: number;
-  }
 

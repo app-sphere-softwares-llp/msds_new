@@ -17,6 +17,8 @@ import { NgChartjsModule } from 'ng-chartjs';
 import { ThemeConstantService } from './shared/services/theme-constant.service';
 
 
+
+
 registerLocaleData(en);
 
 @NgModule({
@@ -33,6 +35,8 @@ registerLocaleData(en);
         TemplateModule,
         SharedModule,
         NgChartjsModule
+
+
     ],
     providers: [
         { 
