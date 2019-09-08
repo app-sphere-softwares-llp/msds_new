@@ -1,0 +1,46 @@
+<div class="header">
+    <div class="logo logo-dark">
+        <a href="">
+            <img class="logo-size" src="assets/images/logo/FMC-logo.GIF" alt="Logo">
+           
+        </a>
+    </div>
+  
+    <div class="nav-wrap">
+        <ul class="nav-left">
+            <li class="desktop-toggle">
+                <a (click)="toggleFold()">
+                    <i nz-icon [nzType]="isFolded? 'menu-unfold':'menu-fold'" theme="outline"></i>
+                </a>
+            </li>
+            <li class="mobile-toggle">
+                <a (click)="toggleExpand()">
+                    <i nz-icon [nzType]="isExpand? 'menu-fold': 'menu-unfold'" theme="outline"></i>
+                </a>
+            </li>
+            <li>
+                <!-- <a (click)="searchToggle()">
+                    <i nz-icon nzType="search" theme="outline"></i>
+                </a> -->
+                <!-- <nz-drawer [nzWidth]="380" nzTitle="Search" [nzVisible]="searchVisible" nzPlacement="left" (nzOnClose)="searchToggle()">
+                    <app-search></app-search>
+                </nz-drawer> -->
+            </li>
+        </ul>
+        <ul class="nav-right">
+            <li>
+                <h3 style="margin-bottom: 0">
+                    MSDS Application
+                </h3>
+            </li>
+            <li>
+                <a (click)="quickViewToggle()">
+                    <i nz-icon nzType="appstore" theme="outline"></i>
+                </a>
+                <nz-drawer [nzWidth]="280" nzTitle="Quick View" [nzClosable]="false" [nzVisible]="quickViewVisible" nzPlacement="right" (nzOnClose)="quickViewToggle()">
+                    <app-quick-view></app-quick-view>
+                </nz-drawer>
+            </li>
+        </ul>
+    </div>
+</div>    

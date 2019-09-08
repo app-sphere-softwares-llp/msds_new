@@ -1,0 +1,642 @@
+{
+    "FMCBusiness": [
+        {
+            "text": "APG",
+            "value": "APG-APG"
+        },
+        {
+            "text": "Alkali",
+            "value": "CPG-ACD"
+        },
+        {
+            "text": "Environmental Solutions",
+            "value": "CPG-ESD"
+        },
+        {
+            "text": "Natronx",
+            "value": "CPG-NXD"
+        },
+        {
+            "text": "Peroxygens",
+            "value": "CPG-PXD"
+        },
+        {
+            "text": "Biopolymer",
+            "value": "SCG-BIO"
+        },
+        {
+            "text": "The Wercs, Ltd.",
+            "value": "WERCS"
+        }
+    ],
+    "Languages": [
+        {
+            "text": "All",
+            "value": "All"
+        },
+        {
+            "text": "EN",
+            "value": "AMERICAN ENGLISH"
+        },
+        {
+            "text": "AR",
+            "value": "ARABIC"
+        },
+        {
+            "text": "AT",
+            "value": "AUSTRIAN GERMAN"
+        },
+        {
+            "text": "BD",
+            "value": "BELGIAN DUTCH"
+        },
+        {
+            "text": "BF",
+            "value": "BELGIAN FRENCH"
+        },
+        {
+            "text": "BR",
+            "value": "BRAZILIAN PORTUGUESE"
+        },
+        {
+            "text": "BE",
+            "value": "BRITISH ENGLISH"
+        },
+        {
+            "text": "BG",
+            "value": "BULGARIAN"
+        },
+        {
+            "text": "CF",
+            "value": "CANADIAN FRENCH"
+        },
+        {
+            "text": "TA",
+            "value": "CHIN. TRADITIONAL"
+        },
+        {
+            "text": "CN",
+            "value": "CHINESE SIMPLIFIED"
+        },
+        {
+            "text": "CR",
+            "value": "CROATIAN"
+        },
+        {
+            "text": "CS",
+            "value": "CZECH"
+        },
+        {
+            "text": "DA",
+            "value": "DANISH"
+        },
+        {
+            "text": "NL",
+            "value": "DUTCH"
+        },
+        {
+            "text": "ET",
+            "value": "ESTONIAN"
+        },
+        {
+            "text": "FI",
+            "value": "FINNISH"
+        },
+        {
+            "text": "FR",
+            "value": "FRENCH"
+        },
+        {
+            "text": "DE",
+            "value": "GERMAN"
+        },
+        {
+            "text": "EL",
+            "value": "GREEK"
+        },
+        {
+            "text": "HB",
+            "value": "HEBREW"
+        },
+        {
+            "text": "HI",
+            "value": "HINDI"
+        },
+        {
+            "text": "HU",
+            "value": "HUNGARIAN"
+        },
+        {
+            "text": "ID",
+            "value": "INDONESIAN"
+        },
+        {
+            "text": "GA",
+            "value": "IRISH ENGLISH"
+        },
+        {
+            "text": "IT",
+            "value": "ITALIAN"
+        },
+        {
+            "text": "JP",
+            "value": "JAPANESE"
+        },
+        {
+            "text": "KO",
+            "value": "KOREAN"
+        },
+        {
+            "text": "LV",
+            "value": "LATVIAN"
+        },
+        {
+            "text": "LT",
+            "value": "LITHUANIAN"
+        },
+        {
+            "text": "MA",
+            "value": "MALAYSIAN"
+        },
+        {
+            "text": "MS",
+            "value": "MEXICAN SPANISH"
+        },
+        {
+            "text": "NO",
+            "value": "NORWEGIAN"
+        },
+        {
+            "text": "PL",
+            "value": "POLISH"
+        },
+        {
+            "text": "PT",
+            "value": "PORTUGUESE"
+        },
+        {
+            "text": "RO",
+            "value": "ROMANIAN"
+        },
+        {
+            "text": "RU",
+            "value": "RUSSIAN"
+        },
+        {
+            "text": "SR",
+            "value": "SERBIAN"
+        },
+        {
+            "text": "SK",
+            "value": "SLOVAKIAN"
+        },
+        {
+            "text": "SN",
+            "value": "SLOVENIAN"
+        },
+        {
+            "text": "ES",
+            "value": "SPANISH"
+        },
+        {
+            "text": "SV",
+            "value": "SWEDISH"
+        },
+        {
+            "text": "SF",
+            "value": "SWISS FRENCH"
+        },
+        {
+            "text": "SG",
+            "value": "SWISS GERMAN"
+        },
+        {
+            "text": "SI",
+            "value": "SWISS ITALIAN"
+        },
+        {
+            "text": "TH",
+            "value": "THAILAND"
+        },
+        {
+            "text": "TR",
+            "value": "TURKISH"
+        },
+        {
+            "text": "UK",
+            "value": "UKRAINE"
+        },
+        {
+            "text": "VI",
+            "value": "VIETNAMESE"
+        }
+    ],
+    "Formats": [
+        {
+            "text": "All",
+            "value": " All "
+        },
+        {
+            "text": "AMS",
+            "value": "AMS"
+        },
+        {
+            "text": "BRZ",
+            "value": "Brazil"
+        },
+        {
+            "text": "CHN",
+            "value": "China"
+        },
+        {
+            "text": "JAP",
+            "value": "Japan"
+        },
+        {
+            "text": "KOR",
+            "value": "Korea"
+        },
+        {
+            "text": "LEG",
+            "value": "Legacy Formats"
+        },
+        {
+            "text": "MTR",
+            "value": "Global Format - Master"
+        }
+    ],
+    "SubFormats": [
+        {
+            "text": " All ",
+            "value": "All"
+        },
+        {
+            "text": "APG Asia Pacific",
+            "value": "AGAP"
+        },
+        {
+            "text": "APG Canada",
+            "value": "AGCA"
+        },
+        {
+            "text": "APG CLP GHS",
+            "value": "AGCL"
+        },
+        {
+            "text": "AG COPY TEMPLATE",
+            "value": "AGCP"
+        },
+        {
+            "text": "APG Data Review",
+            "value": "AGDR"
+        },
+        {
+            "text": "APG EU SDS",
+            "value": "AGEU"
+        },
+        {
+            "text": "--- OSHA GHS ---",
+            "value": "AGHS"
+        },
+        {
+            "text": "APG Mexico",
+            "value": "AGMX"
+        },
+        {
+            "text": "APG North America",
+            "value": "AGNA"
+        },
+        {
+            "text": "APG Regulatory Analysis",
+            "value": "AGRA"
+        },
+        {
+            "text": "APG SDS Request Form",
+            "value": "AGSR"
+        },
+        {
+            "text": "AGUK-LABEL",
+            "value": "AGUK"
+        },
+        {
+            "text": "America, Latin and Central",
+            "value": "ALC"
+        },
+        {
+            "text": "Alternatives saved as options",
+            "value": "ALT"
+        },
+        {
+            "text": "Default AMS subformat",
+            "value": "AMS"
+        },
+        {
+            "text": "China",
+            "value": "APCN"
+        },
+        {
+            "text": "APG GHS NA",
+            "value": "APHS"
+        },
+        {
+            "text": "Japan",
+            "value": "APJP"
+        },
+        {
+            "text": "Korea",
+            "value": "APKO"
+        },
+        {
+            "text": "Approval Summary",
+            "value": "APR"
+        },
+        {
+            "text": "Ag Solutions Asia Pacific",
+            "value": "ASAP"
+        },
+        {
+            "text": "Ag Solutions Japan GHS",
+            "value": "ASJP"
+        },
+        {
+            "text": "Ag Solutions Korea",
+            "value": "ASKR"
+        },
+        {
+            "text": "Ag Solutions Latin America",
+            "value": "ASLA"
+        },
+        {
+            "text": "Ag Solutions North America",
+            "value": "ASNA"
+        },
+        {
+            "text": "Australia, New Zealand",
+            "value": "AUS"
+        },
+        {
+            "text": "Australia preGHS",
+            "value": "AUST"
+        },
+        {
+            "text": "--- Brazil GHS ---",
+            "value": "BGHS"
+        },
+        {
+            "text": "BioPolymer Asia Pacific",
+            "value": "BPAP"
+        },
+        {
+            "text": "BioP CLP GHS",
+            "value": "BPCL"
+        },
+        {
+            "text": "BioPolymer Data Review",
+            "value": "BPDR"
+        },
+        {
+            "text": "BioP EU REACH SDS",
+            "value": "BPEU"
+        },
+        {
+            "text": "BioPolymer North American MSDS",
+            "value": "BPNA"
+        },
+        {
+            "text": "BioPolymer Regulatory Analysis",
+            "value": "BPRA"
+        },
+        {
+            "text": "BioPolymer SDS Request Form",
+            "value": "BPSR"
+        },
+        {
+            "text": "Default BRZ subformat",
+            "value": "BRZ"
+        },
+        {
+            "text": "--- China GHS ---",
+            "value": "CGHS"
+        },
+        {
+            "text": "Default CHN subformat",
+            "value": "CHN"
+        },
+        {
+            "text": "CLP",
+            "value": "CLP1"
+        },
+        {
+            "text": "Raw Material Introduction",
+            "value": "CMA"
+        },
+        {
+            "text": "COPY Subformat - Peroxychem",
+            "value": "COPY"
+        },
+        {
+            "text": "CPG Asia Pacific",
+            "value": "CPAP"
+        },
+        {
+            "text": "CPG CLP GHS",
+            "value": "CPCL"
+        },
+        {
+            "text": "CPG Data Review",
+            "value": "CPDR"
+        },
+        {
+            "text": "CPG EU REACh Subformat",
+            "value": "CPEU"
+        },
+        {
+            "text": "CPNA GHS",
+            "value": "CPGH"
+        },
+        {
+            "text": "CPG North American MSDS",
+            "value": "CPNA"
+        },
+        {
+            "text": "CPG Regulatory Analysis",
+            "value": "CPRA"
+        },
+        {
+            "text": "CPG SDS Request Form",
+            "value": "CPSR"
+        },
+        {
+            "text": "ANALYSIS",
+            "value": "DATA"
+        },
+        {
+            "text": "--- EU GHS ---",
+            "value": "EGHS"
+        },
+        {
+            "text": "Experimental SDSs",
+            "value": "ESDS"
+        },
+        {
+            "text": "Exposure Scenario 2",
+            "value": "ESN"
+        },
+        {
+            "text": "EU REACH SDS",
+            "value": "EU"
+        },
+        {
+            "text": "EU - Incl ALL national codes",
+            "value": "EUAL"
+        },
+        {
+            "text": "EU Experimental SDSs",
+            "value": "EUEX"
+        },
+        {
+            "text": "Exposure Scenarios (MTR/EXSC)",
+            "value": "EXSC"
+        },
+        {
+            "text": "Demonstration Only",
+            "value": "FSDS"
+        },
+        {
+            "text": "GHAC",
+            "value": "GHAC"
+        },
+        {
+            "text": "GHS AP",
+            "value": "GHAP"
+        },
+        {
+            "text": "GHS Supplemental for Brazil",
+            "value": "GHBC"
+        },
+        {
+            "text": "GHS Supplemental for Japan",
+            "value": "GHJC"
+        },
+        {
+            "text": "GHS Supplemental for Korea",
+            "value": "GHKC"
+        },
+        {
+            "text": "GHS Supplemental for China",
+            "value": "GHOC"
+        },
+        {
+            "text": "Japan GHS",
+            "value": "GHS"
+        },
+        {
+            "text": "Korean GHS",
+            "value": "GHS"
+        },
+        {
+            "text": "Globally Harmonized System",
+            "value": "GHS"
+        },
+        {
+            "text": "GHS Substance Classifications",
+            "value": "GHSC"
+        },
+        {
+            "text": "GHS Substance Classifications",
+            "value": "GHSZ"
+        },
+        {
+            "text": "Health & Nutrition GHS",
+            "value": "HNHS"
+        },
+        {
+            "text": "IUCLID Holding",
+            "value": "IUC"
+        },
+        {
+            "text": "Default JAP subformat",
+            "value": "JAP"
+        },
+        {
+            "text": "--- Japan GHS ---",
+            "value": "JGHS"
+        },
+        {
+            "text": "--- Korea GHS ---",
+            "value": "KGHS"
+        },
+        {
+            "text": "Appended MSDS",
+            "value": "KIT"
+        },
+        {
+            "text": "Default KOR subformat",
+            "value": "KOR"
+        },
+        {
+            "text": "Label",
+            "value": "LBL"
+        },
+        {
+            "text": "Default LEG subformat",
+            "value": "LEG"
+        },
+        {
+            "text": "North America GHS",
+            "value": "NAGH"
+        },
+        {
+            "text": "North America",
+            "value": "NAM"
+        },
+        {
+            "text": "AGHS Original",
+            "value": "OAGH"
+        },
+        {
+            "text": "HN REGULATORY DATA",
+            "value": "RCHZ"
+        },
+        {
+            "text": "Regulatory Analysis",
+            "value": "REG"
+        },
+        {
+            "text": "Rules Subformat",
+            "value": "RULE"
+        },
+        {
+            "text": "DATA REQUIRED FOR SARA",
+            "value": "SARA"
+        },
+        {
+            "text": "SDS Request Form",
+            "value": "SDSR"
+        },
+        {
+            "text": "REACH SIMS",
+            "value": "SIMS"
+        },
+        {
+            "text": "Temporary Hold",
+            "value": "TEMP"
+        },
+        {
+            "text": "For Testing",
+            "value": "TEST"
+        },
+        {
+            "text": "Toxicology",
+            "value": "TOX"
+        },
+        {
+            "text": "VTI",
+            "value": "VTI"
+        },
+        {
+            "text": "REACh Subformat",
+            "value": "WPR1"
+        }
+    ]
+}
