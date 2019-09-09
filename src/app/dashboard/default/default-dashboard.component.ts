@@ -40,6 +40,10 @@ export class DefaultDashboardComponent implements OnInit {
             this.formats = this.lookUpList.Formats;
             this.subFormats = this.lookUpList.SubFormats;
         });
+
+        if (this.searchService.searchModal) {
+            this.searchModel = this.searchService.searchModal;
+        }
     }
 
     onChange(result: Date): void {
@@ -47,6 +51,7 @@ export class DefaultDashboardComponent implements OnInit {
         if (this.showRangeFilter) {
             // Check if this a Published
             if (this.searchModel.SelectedDateType === 'A') {
+                this.searchModel.RevisionDateFilter.FilterType = this.searchModel.PublishDateFilter.FilterType;
                 this.searchModel.RevisionDateFilter.StartDate = result[0];
                 this.searchModel.RevisionDateFilter.EndDate = result[1];
                 this.searchModel.PublishDateFilter.StartDate = null;
@@ -59,6 +64,7 @@ export class DefaultDashboardComponent implements OnInit {
             }
         } else {
             if (this.searchModel.SelectedDateType === 'A') {
+                this.searchModel.RevisionDateFilter.FilterType = this.searchModel.PublishDateFilter.FilterType;
                 this.searchModel.RevisionDateFilter.StartDate = result;
                 this.searchModel.PublishDateFilter.StartDate = null;
             } else {

@@ -77,5 +77,12 @@ export class WercsExtractSearchModel extends WercsExtract {
 export class SearchRequestModal {
     pageNumber: number;
     pageSize: number;
+    totalCount: number;
+    currentPage: number;
+    totalPages: number;
+    previousPage: string;
+    nextPage: string;
     QuerySearchModel: WercsExtractSearchModel;
+    Items: WercsExtract[]
 }
+

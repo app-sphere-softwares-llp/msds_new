@@ -40,7 +40,7 @@ export class SearchService {
         });
     }
 
-    public searchData(modal: SearchRequestModal): Observable<WercsExtract[]> {
-        return this.http.post<WercsExtract[]>('https://msdsapi.azurewebsites.net/api/WercsExtracts/GetPagedData', modal);
+    public searchData(modal: SearchRequestModal): Observable<SearchRequestModal> {
+        return this.http.post<SearchRequestModal>('https://msdsapi.azurewebsites.net/api/WercsExtracts/GetPagedData', modal);
     }
 }

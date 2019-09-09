@@ -1,80 +1,90 @@
 <nz-card>
+    <div *ngIf="enableExcelDownloadFile && displayData.length > 0"  style="position: absolute; top: 43px;z-index: 10000;">
+       <a (click)='exportAsExcelFile()'> Download <i nz-icon nzType="file-excel" nzTheme="outline"></i></a>
+       <nz-divider nzType="vertical"></nz-divider>
+       <span>Total Records: {{ total }}</span>
+    </div>
     <nz-table #filterTable #smallTable
-              [nzData]="displayData" [nzPaginationPosition]="'both'"
-              [nzLoading]="isDataInProcess" [nzShowSizeChanger]="true"
-              [nzScroll]="{x: '200px'}" [nzPageSizeOptions]="[5,10,30, 50 ,100]"
-              [nzFrontPagination]="true" [nzPageSize]="searchModalRequest.pageSize"
-              (nzPageSizeChange)="pageSizeChanged($event)"
-              (nzPageIndexChange)="pageChanged($event)"
-              nzSize="small"
-    >
-        <thead (nzSortChange)="sort($event)" nzSingleSort>
-
-        <tr>
-            <th>ProductName</th>
-            <th>PDFName</th>
-            <th>PublishDate</th>
-            <th>RevisionDate</th>
-            <th>Path</th>
-            <th>Language</th>
-            <th>SpecificationID</th>
-            <th>TradeName</th>
-            <th>FMCBusiness</th>
-            <th>ActiveVersion</th>
-            <th>AuthorizedPortal</th>
-            <th>CMR</th>
-            <th>CasNumber</th>
-            <th>ChemicalName</th>
-            <th>CommercialNames</th>
-            <th>CommonName</th>
-            <th>EHSVersionNo</th>
-            <th>FileFormat</th>
-            <th>GENVARIANT</th>
-            <th>INCODE</th>
-            <th>IUPAC</th>
-            <th>LegacySDSID</th>
-            <th>LegacySpecID</th>
-            <th>ValidityArea</th>
-            <th>ValidityAreaDescription</th>
-            <th>WercsRevisionNo</th>
-            <th>WercsSubFormat</th>
-        </tr>
-
+    [nzData]="displayData" [nzPaginationPosition]="'both'"
+    [nzLoading]="isDataInProcess" [nzShowSizeChanger]="true"
+    [nzScroll]="{x: '200px'}" [nzPageSizeOptions]="[50 ,100, 500, 5000]"
+    (nzPageSizeChange)="pageSizeChanged($event)"
+    (nzPageIndexChange)="pageChanged($event)"
+    nzSize="small"
+    [(nzPageIndex)]="pageIndex"
+    [(nzPageSize)]="pageSize"
+>
+        
+        <thead> 
+            <tr>
+                <th>Action</th>
+                <th>SpecificationID</th>
+                <th>ProductName</th>
+                <th>Format</th>
+                <th>Sub Format</th>
+                <th>Language</th>
+                <th>Publish Date</th>
+                <th>Revision Date</th>
+                <th>Trade Name</th>
+                <th>FMC Business</th>
+                <th>Authorized Portal</th>
+                <th>CMR</th>
+                <th>Cas Number</th>
+                <th>Chemical Name</th>
+                <th>Commercial Names</th>
+                <th>Common Name</th>
+                <th>EHS Version No</th>
+                <th>GENVARIANT</th>
+                <th>INCODE</th>
+                <th>IUPAC</th>
+                <th>Legacy SDSID</th>
+                <th>Legacy SpecID</th>
+                <th>Validity Area</th>
+                <th>Validity Area Description</th>
+                <th>Wercs Revision No</th>
+            </tr>
         </thead>
 
 
         <tbody>
-        <ng-template ngFor let-data [ngForOf]="smallTable.data">
-            <tr>
-                <td>{{data.ProductName}}</td>
-                <td>{{data.PDFName}}</td>
-                <td>{{data.PublishDate}}</td>
-                <td>{{data.RevisionDate}}</td>
-                <td>{{data.Path}}</td>
-                <td>{{data.Language}}</td>
-                <td>{{data.SpecificationID}}</td>
-                <td>{{data.TradeName}}</td>
-                <td>{{data.FMCBusiness}}</td>
-                <td>{{data.ActiveVersion}}</td>
-                <td>{{data.AuthorizedPortal}}</td>
-                <td>{{data.CMR}}</td>
-                <td>{{data.CasNumber}}</td>
-                <td>{{data.ChemicalName}}</td>
-                <td>{{data.CommercialNames}}</td>
-                <td>{{data.CommonName}}</td>
-                <td>{{data.EHSVersionNo}}</td>
-                <td>{{data.FileFormat}}</td>
-                <td>{{data.GENVARIANT}}</td>
-                <td>{{data.INCODE}}</td>
-                <td>{{data.IUPAC}}</td>
-                <td>{{data.LegacySDSID}}</td>
-                <td>{{data.LegacySpecID}}</td>
-                <td>{{data.ValidityArea}}</td>
-                <td>{{data.ValidityAreaDescription}}</td>
-                <td>{{data.WercsRevisionNo}}</td>
-                <td>{{data.WercsSubFormat}}</td>
-            </tr>
-        </ng-template>
+            <ng-template ngFor let-data [ngForOf]="smallTable.data">
+                <tr>
+                    <td style="text-align:center !important; padding: 13px;">
+                        <nz-button-group>
+                            <a (click)="openPDF(data)">
+                                <i nz-icon nzType="file-pdf" nzTheme="outline"></i>
+                            </a>
+                            <a (click)="copyLink(data)">
+                                <i nz-icon nzType="copy" nzTheme="outline"></i>
+                            </a>
+                        </nz-button-group>
+                    </td>
+                    <td>{{data.SpecificationID}}</td>
+                    <td>{{data.ProductName}}</td>
+                    <td>{{data.FileFormat}}</td>    
+                    <td>{{data.WercsSubFormat}}</td>
+                    <td>{{data.Language}}</td>
+                    <td>{{data.PublishDate | date }}</td>
+                    <td>{{data.RevisionDate | date }}</td>
+                    <td>{{data.TradeName}}</td>
+                    <td>{{data.FMCBusiness}}</td>
+                    <td>{{data.AuthorizedPortal}}</td>
+                    <td>{{data.CMR}}</td>
+                    <td>{{data.CasNumber}}</td>
+                    <td>{{data.ChemicalName}}</td>
+                    <td>{{data.CommercialNames}}</td>
+                    <td>{{data.CommonName}}</td>
+                    <td>{{data.EHSVersionNo}}</td>
+                    <td>{{data.GENVARIANT}}</td>
+                    <td>{{data.INCODE}}</td>
+                    <td>{{data.IUPAC}}</td>
+                    <td>{{data.LegacySDSID}}</td>
+                    <td>{{data.LegacySpecID}}</td>
+                    <td>{{data.ValidityArea}}</td>
+                    <td>{{data.ValidityAreaDescription}}</td>
+                    <td>{{data.WercsRevisionNo}}</td>
+                </tr>
+            </ng-template>
         </tbody>
     </nz-table>
 </nz-card>
