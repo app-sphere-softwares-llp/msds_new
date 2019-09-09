@@ -2,7 +2,7 @@ import {HttpClient, HttpParams} from '@angular/common/http';
 import {Injectable} from '@angular/core';
 import {Observable} from 'rxjs';
 import {LookUpList} from '../interfaces/lookuplist.type';
-import {SearchRequestModal, WercsExtractSearchModel} from '../interfaces/search.type';
+import {SearchRequestModal, WercsExtract, WercsExtractSearchModel} from '../interfaces/search.type';
 
 
 @Injectable()
@@ -40,7 +40,7 @@ export class SearchService {
         });
     }
 
-    public searchData(modal: SearchRequestModal) {
-        return this.http.post('https://msdsapi.azurewebsites.net/api/WercsExtracts/GetPagedData', modal);
+    public searchData(modal: SearchRequestModal): Observable<WercsExtract[]> {
+        return this.http.post<WercsExtract[]>('https://msdsapi.azurewebsites.net/api/WercsExtracts/GetPagedData', modal);
     }
 }

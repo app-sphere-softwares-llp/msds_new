@@ -1,12 +1,13 @@
 import {Component, OnInit} from '@angular/core';
 import {SearchService} from '../../shared/services/search.service';
-import {SearchRequestModal} from '../../shared/interfaces/search.type';
+import {SearchRequestModal, WercsExtract} from '../../shared/interfaces/search.type';
+import {NzMessageService} from 'ng-zorro-antd';
 
 @Component({
     templateUrl: './result.component.html'
 })
 export class ResultComponent implements OnInit {
-    constructor(private searchService: SearchService) {
+    constructor(private searchService: SearchService, private messageService: NzMessageService) {
     }
 
     nameList = [
@@ -43,8 +44,9 @@ export class ResultComponent implements OnInit {
             address: 'London No. 2 Lake Park'
         }
     ];
-    displayData = []; // You need to change it as well!
+    displayData: WercsExtract[] = []; // You need to change it as well!
     searchModalRequest: SearchRequestModal = new SearchRequestModal();
+    isDataInProcess = false;
 
     ngOnInit() {
         this.searchModalRequest.QuerySearchModel = this.searchService.searchModal;
@@ -53,49 +55,62 @@ export class ResultComponent implements OnInit {
         this.getData();
     }
 
+    pageChanged(page: number) {
+        this.searchModalRequest.pageNumber = page;
+        this.getData();
+    }
+
+    pageSizeChanged(size: number) {
+        this.searchModalRequest.pageSize = size;
+        this.getData();
+    }
+
     getData() {
+        this.isDataInProcess = true;
         this.searchService.searchData(this.searchModalRequest).subscribe(res => {
-            debugger;
+            this.displayData = res;
+            this.isDataInProcess = false;
         }, error => {
-            debugger;
+            this.messageService.error('Something Went Wrong, Please try again Later!');
+            this.isDataInProcess = false;
         });
     }
 
     sort(sort: { key: string; value: string }): void {
         this.sortName = sort.key;
         this.sortValue = sort.value;
-        this.search();
+        // this.search();
     }
 
     filter(listOfSearchName: string[], searchAddress: string): void {
         this.listOfSearchName = listOfSearchName;
         this.searchAddress = searchAddress;
-        this.search();
+        // this.search();
     }
 
-    search(): void {
-        /** filter data **/
-        const filterFunc = item =>
-            (this.searchAddress
-                ? item.address.indexOf(this.searchAddress) !== -1
-                : true) &&
-            (this.listOfSearchName.length
-                ? this.listOfSearchName.some(name => item.name.indexOf(name) !== -1)
-                : true);
-        const data = this.data.filter(item => filterFunc(item));
-        /** sort data **/
-        if (this.sortName && this.sortValue) {
-            this.displayData = data.sort((a, b) =>
-                this.sortValue === 'ascend'
-                    ? a[this.sortName] > b[this.sortName]
-                    ? 1
-                    : -1
-                    : b[this.sortName] > a[this.sortName]
-                    ? 1
-                    : -1
-            );
-        } else {
-            this.displayData = data;
-        }
-    }
+    // search(): void {
+    //     /** filter data **/
+    //     const filterFunc = item =>
+    //         (this.searchAddress
+    //             ? item.address.indexOf(this.searchAddress) !== -1
+    //             : true) &&
+    //         (this.listOfSearchName.length
+    //             ? this.listOfSearchName.some(name => item.name.indexOf(name) !== -1)
+    //             : true);
+    //     const data = this.data.filter(item => filterFunc(item));
+    //     /** sort data **/
+    //     if (this.sortName && this.sortValue) {
+    //         this.displayData = data.sort((a, b) =>
+    //             this.sortValue === 'ascend'
+    //                 ? a[this.sortName] > b[this.sortName]
+    //                 ? 1
+    //                 : -1
+    //                 : b[this.sortName] > a[this.sortName]
+    //                 ? 1
+    //                 : -1
+    //         );
+    //     } else {
+    //         this.displayData = data;
+    //     }
+    // }
 }

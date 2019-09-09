@@ -27,7 +27,7 @@ export class DefaultDashboardComponent implements OnInit {
 
     ngOnInit() {
         this.searchModel.SelectedDateType = 'A';
-        this.searchModel.PublishDateFilter.FilterType = 'Equals';
+        // this.searchModel.PublishDateFilter.FilterType = 'Equals';
         this.showRangeFilter = false;
         this.isDaysOptionSelected = false;
         this.notificationService.config({
@@ -70,11 +70,7 @@ export class DefaultDashboardComponent implements OnInit {
     }
 
     onConditionChange(e): void {
-        if (e === 'Range') {
-            this.showRangeFilter = true;
-        } else {
-            this.showRangeFilter = false;
-        }
+        this.showRangeFilter = e === 'Range';
         this.searchModel.RevisionDateFilter.StartDate = null;
         this.searchModel.RevisionDateFilter.EndDate = null;
         this.searchModel.PublishDateFilter.StartDate = null;
