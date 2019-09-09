@@ -83,6 +83,6 @@ export class SearchRequestModal {
     previousPage: string;
     nextPage: string;
     QuerySearchModel: WercsExtractSearchModel;
-    Items: WercsExtract[]
+    Items: WercsExtract[];
 }
 
