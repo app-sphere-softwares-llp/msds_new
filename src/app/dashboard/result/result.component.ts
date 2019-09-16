@@ -8,6 +8,7 @@ import * as FileSaver from 'file-saver';
 import * as XLSX from 'xlsx';
 
 import { NzMessageService, NzNotificationService } from 'ng-zorro-antd';
+import { element } from 'protractor';
 
 const EXCEL_TYPE = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;charset=UTF-8';
 const EXCEL_EXTENSION = '.xlsx';
@@ -27,7 +28,7 @@ export class ResultComponent implements OnInit {
   searchModalRequest: SearchRequestModal = new SearchRequestModal();
   isDataInProcess = false;
   pageIndex = 1;
-  pageSize = 10;
+  pageSize = 50;
   total = 1;
   enableExcelDownloadFile = false;
 
@@ -69,6 +70,10 @@ export class ResultComponent implements OnInit {
       res => {
         this.pageSize = res.pageSize;
         this.total = res.totalCount;
+        // tslint:disable-next-line: no-shadowed-variable
+        res.Items.forEach(element => {
+            element.Path = location.origin + '/assets/pdf/' + element.PDFName;
+        });
         this.displayData = res.Items;
         this.isDataInProcess = false;
         this.enableExcelDownloadFile = true;

@@ -35,204 +35,204 @@
     ],
     "Languages": [
         {
-            "text": "All",
-            "value": "All"
+            "value": "All",
+            "text": "All"
         },
         {
-            "text": "EN",
-            "value": "AMERICAN ENGLISH"
+            "value": "EN",
+            "text": "AMERICAN ENGLISH"
         },
         {
-            "text": "AR",
-            "value": "ARABIC"
+            "value": "AR",
+            "text": "ARABIC"
         },
         {
-            "text": "AT",
-            "value": "AUSTRIAN GERMAN"
+            "value": "AT",
+            "text": "AUSTRIAN GERMAN"
         },
         {
-            "text": "BD",
-            "value": "BELGIAN DUTCH"
+            "value": "BD",
+            "text": "BELGIAN DUTCH"
         },
         {
-            "text": "BF",
-            "value": "BELGIAN FRENCH"
+            "value": "BF",
+            "text": "BELGIAN FRENCH"
         },
         {
-            "text": "BR",
-            "value": "BRAZILIAN PORTUGUESE"
+            "value": "BR",
+            "text": "BRAZILIAN PORTUGUESE"
         },
         {
-            "text": "BE",
-            "value": "BRITISH ENGLISH"
+            "value": "BE",
+            "text": "BRITISH ENGLISH"
         },
         {
-            "text": "BG",
-            "value": "BULGARIAN"
+            "value": "BG",
+            "text": "BULGARIAN"
         },
         {
-            "text": "CF",
-            "value": "CANADIAN FRENCH"
+            "value": "CF",
+            "text": "CANADIAN FRENCH"
         },
         {
-            "text": "TA",
-            "value": "CHIN. TRADITIONAL"
+            "value": "TA",
+            "text": "CHIN. TRADITIONAL"
         },
         {
-            "text": "CN",
-            "value": "CHINESE SIMPLIFIED"
+            "value": "CN",
+            "text": "CHINESE SIMPLIFIED"
         },
         {
             "text": "CR",
             "value": "CROATIAN"
         },
         {
-            "text": "CS",
-            "value": "CZECH"
+            "value": "CS",
+            "text": "CZECH"
         },
         {
-            "text": "DA",
-            "value": "DANISH"
+            "value": "DA",
+            "text": "DANISH"
         },
         {
-            "text": "NL",
-            "value": "DUTCH"
+            "value": "NL",
+            "text": "DUTCH"
         },
         {
-            "text": "ET",
-            "value": "ESTONIAN"
+            "value": "ET",
+            "text": "ESTONIAN"
         },
         {
-            "text": "FI",
-            "value": "FINNISH"
+            "value": "FI",
+            "text": "FINNISH"
         },
         {
-            "text": "FR",
-            "value": "FRENCH"
+            "value": "FR",
+            "text": "FRENCH"
         },
         {
-            "text": "DE",
-            "value": "GERMAN"
+            "value": "DE",
+            "text": "GERMAN"
         },
         {
-            "text": "EL",
-            "value": "GREEK"
+            "value": "EL",
+            "text": "GREEK"
         },
         {
-            "text": "HB",
-            "value": "HEBREW"
+            "value": "HB",
+            "text": "HEBREW"
         },
         {
-            "text": "HI",
-            "value": "HINDI"
+            "value": "HI",
+            "text": "HINDI"
         },
         {
-            "text": "HU",
-            "value": "HUNGARIAN"
+            "value": "HU",
+            "text": "HUNGARIAN"
         },
         {
-            "text": "ID",
-            "value": "INDONESIAN"
+            "value": "ID",
+            "text": "INDONESIAN"
         },
         {
-            "text": "GA",
-            "value": "IRISH ENGLISH"
+            "value": "GA",
+            "text": "IRISH ENGLISH"
         },
         {
-            "text": "IT",
-            "value": "ITALIAN"
+            "value": "IT",
+            "text": "ITALIAN"
         },
         {
-            "text": "JP",
-            "value": "JAPANESE"
+            "value": "JP",
+            "text": "JAPANESE"
         },
         {
-            "text": "KO",
-            "value": "KOREAN"
+            "value": "KO",
+            "text": "KOREAN"
         },
         {
             "text": "LV",
             "value": "LATVIAN"
         },
         {
-            "text": "LT",
-            "value": "LITHUANIAN"
+            "value": "LT",
+            "text": "LITHUANIAN"
         },
         {
-            "text": "MA",
-            "value": "MALAYSIAN"
+            "value": "MA",
+            "text": "MALAYSIAN"
         },
         {
-            "text": "MS",
-            "value": "MEXICAN SPANISH"
+            "value": "MS",
+            "text": "MEXICAN SPANISH"
         },
         {
-            "text": "NO",
-            "value": "NORWEGIAN"
+            "value": "NO",
+            "text": "NORWEGIAN"
         },
         {
-            "text": "PL",
-            "value": "POLISH"
+            "value": "PL",
+            "text": "POLISH"
         },
         {
-            "text": "PT",
-            "value": "PORTUGUESE"
+            "value": "PT",
+            "text": "PORTUGUESE"
         },
         {
-            "text": "RO",
-            "value": "ROMANIAN"
+            "value": "RO",
+            "text": "ROMANIAN"
         },
         {
-            "text": "RU",
-            "value": "RUSSIAN"
+            "value": "RU",
+            "text": "RUSSIAN"
         },
         {
-            "text": "SR",
-            "value": "SERBIAN"
+            "value": "SR",
+            "text": "SERBIAN"
         },
         {
-            "text": "SK",
-            "value": "SLOVAKIAN"
+            "value": "SK",
+            "text": "SLOVAKIAN"
         },
         {
-            "text": "SN",
-            "value": "SLOVENIAN"
+            "value": "SN",
+            "text": "SLOVENIAN"
         },
         {
-            "text": "ES",
-            "value": "SPANISH"
+            "value": "ES",
+            "text": "SPANISH"
         },
         {
-            "text": "SV",
-            "value": "SWEDISH"
+            "value": "SV",
+            "text": "SWEDISH"
         },
         {
-            "text": "SF",
-            "value": "SWISS FRENCH"
+            "value": "SF",
+            "text": "SWISS FRENCH"
         },
         {
-            "text": "SG",
-            "value": "SWISS GERMAN"
+            "value": "SG",
+            "text": "SWISS GERMAN"
         },
         {
-            "text": "SI",
-            "value": "SWISS ITALIAN"
+            "value": "SI",
+            "text": "SWISS ITALIAN"
         },
         {
-            "text": "TH",
-            "value": "THAILAND"
+            "value": "TH",
+            "text": "THAILAND"
         },
         {
-            "text": "TR",
-            "value": "TURKISH"
+            "value": "TR",
+            "text": "TURKISH"
         },
         {
-            "text": "UK",
-            "value": "UKRAINE"
+            "value": "UK",
+            "text": "UKRAINE"
         },
         {
-            "text": "VI",
-            "value": "VIETNAMESE"
+            "value": "VI",
+            "text": "VIETNAMESE"
         }
     ],
     "Formats": [
@@ -275,235 +275,235 @@
             "value": "All"
         },
         {
-            "text": "APG Asia Pacific",
+            "text": "APG Asia Pacific (AGAP)",
             "value": "AGAP"
         },
         {
-            "text": "APG Canada",
+            "text": "APG Canada (AGCA)",
             "value": "AGCA"
         },
         {
-            "text": "APG CLP GHS",
+            "text": "APG CLP GHS (AGCL)",
             "value": "AGCL"
         },
         {
-            "text": "AG COPY TEMPLATE",
+            "text": "AG COPY TEMPLATE (AGCP)",
             "value": "AGCP"
         },
         {
-            "text": "APG Data Review",
+            "text": "APG Data Review (AGDR)",
             "value": "AGDR"
         },
         {
-            "text": "APG EU SDS",
+            "text": "APG EU SDS (AGEU)",
             "value": "AGEU"
         },
         {
-            "text": "--- OSHA GHS ---",
+            "text": "--- OSHA GHS (AGHS) ---",
             "value": "AGHS"
         },
         {
-            "text": "APG Mexico",
+            "text": "APG Mexico (AGMX)",
             "value": "AGMX"
         },
         {
-            "text": "APG North America",
+            "text": "APG North America (AGNA)",
             "value": "AGNA"
         },
         {
-            "text": "APG Regulatory Analysis",
+            "text": "APG Regulatory Analysis (AGRA)",
             "value": "AGRA"
         },
         {
-            "text": "APG SDS Request Form",
+            "text": "APG SDS Request Form (AGSR)",
             "value": "AGSR"
         },
         {
-            "text": "AGUK-LABEL",
+            "text": "AGUK-LABEL (AGUK)",
             "value": "AGUK"
         },
         {
-            "text": "America, Latin and Central",
+            "text": "America, Latin and Central (ALC)",
             "value": "ALC"
         },
         {
-            "text": "Alternatives saved as options",
+            "text": "Alternatives saved as options (ALT)",
             "value": "ALT"
         },
         {
-            "text": "Default AMS subformat",
+            "text": "Default AMS subformat (AMS)",
             "value": "AMS"
         },
         {
-            "text": "China",
+            "text": "China (APCN)",
             "value": "APCN"
         },
         {
-            "text": "APG GHS NA",
+            "text": "APG GHS NA (APHS)",
             "value": "APHS"
         },
         {
-            "text": "Japan",
+            "text": "Japan (APJP)",
             "value": "APJP"
         },
         {
-            "text": "Korea",
+            "text": "Korea (APKO)",
             "value": "APKO"
         },
         {
-            "text": "Approval Summary",
+            "text": "Approval Summary (APR)",
             "value": "APR"
         },
         {
-            "text": "Ag Solutions Asia Pacific",
+            "text": "Ag Solutions Asia Pacific (ASAP)",
             "value": "ASAP"
         },
         {
-            "text": "Ag Solutions Japan GHS",
+            "text": "Ag Solutions Japan GHS (ASJP)",
             "value": "ASJP"
         },
         {
-            "text": "Ag Solutions Korea",
+            "text": "Ag Solutions Korea (ASKR)",
             "value": "ASKR"
         },
         {
-            "text": "Ag Solutions Latin America",
+            "text": "Ag Solutions Latin America (ASLA)",
             "value": "ASLA"
         },
         {
-            "text": "Ag Solutions North America",
+            "text": "Ag Solutions North America (ASNA)",
             "value": "ASNA"
         },
         {
-            "text": "Australia, New Zealand",
+            "text": "Australia, New Zealand (AUS)",
             "value": "AUS"
         },
         {
-            "text": "Australia preGHS",
+            "text": "Australia preGHS (AUST)",
             "value": "AUST"
         },
         {
-            "text": "--- Brazil GHS ---",
+            "text": "--- Brazil GHS (BGHS) ---",
             "value": "BGHS"
         },
         {
-            "text": "BioPolymer Asia Pacific",
+            "text": "BioPolymer Asia Pacific (BPAP)",
             "value": "BPAP"
         },
         {
-            "text": "BioP CLP GHS",
+            "text": "BioP CLP GHS (BPCL)",
             "value": "BPCL"
         },
         {
-            "text": "BioPolymer Data Review",
+            "text": "BioPolymer Data Review (BPDR)",
             "value": "BPDR"
         },
         {
-            "text": "BioP EU REACH SDS",
+            "text": "BioP EU REACH SDS (BPEU)",
             "value": "BPEU"
         },
         {
-            "text": "BioPolymer North American MSDS",
+            "text": "BioPolymer North American MSDS (BPNA)",
             "value": "BPNA"
         },
         {
-            "text": "BioPolymer Regulatory Analysis",
+            "text": "BioPolymer Regulatory Analysis (BPRA)",
             "value": "BPRA"
         },
         {
-            "text": "BioPolymer SDS Request Form",
+            "text": "BioPolymer SDS Request Form (BPSR)",
             "value": "BPSR"
         },
         {
-            "text": "Default BRZ subformat",
+            "text": "Default BRZ subformat (BRZ)",
             "value": "BRZ"
         },
         {
-            "text": "--- China GHS ---",
+            "text": "--- China GHS (CGHS) ---",
             "value": "CGHS"
         },
         {
-            "text": "Default CHN subformat",
+            "text": "Default CHN subformat (CHN)",
             "value": "CHN"
         },
         {
-            "text": "CLP",
+            "text": "CLP (CLP1)",
             "value": "CLP1"
         },
         {
-            "text": "Raw Material Introduction",
+            "text": "Raw Material Introduction (CMA)",
             "value": "CMA"
         },
         {
-            "text": "COPY Subformat - Peroxychem",
+            "text": "COPY Subformat - Peroxychem (COPY)",
             "value": "COPY"
         },
         {
-            "text": "CPG Asia Pacific",
+            "text": "CPG Asia Pacific (CPAP)",
             "value": "CPAP"
         },
         {
-            "text": "CPG CLP GHS",
+            "text": "CPG CLP GHS (CPCL)",
             "value": "CPCL"
         },
         {
-            "text": "CPG Data Review",
+            "text": "CPG Data Review (CPDR)",
             "value": "CPDR"
         },
         {
-            "text": "CPG EU REACh Subformat",
+            "text": "CPG EU REACh Subformat (CPEU)",
             "value": "CPEU"
         },
         {
-            "text": "CPNA GHS",
+            "text": "CPNA GHS (CPGH)",
             "value": "CPGH"
         },
         {
-            "text": "CPG North American MSDS",
+            "text": "CPG North American MSDS (CPNA)",
             "value": "CPNA"
         },
         {
-            "text": "CPG Regulatory Analysis",
+            "text": "CPG Regulatory Analysis (CPRA)",
             "value": "CPRA"
         },
         {
-            "text": "CPG SDS Request Form",
+            "text": "CPG SDS Request Form (CPSR)",
             "value": "CPSR"
         },
         {
-            "text": "ANALYSIS",
+            "text": "ANALYSIS (DATA)",
             "value": "DATA"
         },
         {
-            "text": "--- EU GHS ---",
+            "text": "--- EU GHS (EGHS) ---",
             "value": "EGHS"
         },
         {
-            "text": "Experimental SDSs",
+            "text": "Experimental SDSs (ESDS)",
             "value": "ESDS"
         },
         {
-            "text": "Exposure Scenario 2",
+            "text": "Exposure Scenario 2 (ESN)",
             "value": "ESN"
         },
         {
-            "text": "EU REACH SDS",
+            "text": "EU REACH SDS (EU)",
             "value": "EU"
         },
         {
-            "text": "EU - Incl ALL national codes",
+            "text": "EU - Incl ALL national codes (EUAL)",
             "value": "EUAL"
         },
         {
-            "text": "EU Experimental SDSs",
+            "text": "EU Experimental SDSs (EUEX)",
             "value": "EUEX"
         },
         {
-            "text": "Exposure Scenarios (MTR/EXSC)",
+            "text": "Exposure Scenarios (MTR/EXSC) (EXSC)",
             "value": "EXSC"
         },
         {
-            "text": "Demonstration Only",
+            "text": "Demonstration Only (FSDS)",
             "value": "FSDS"
         },
         {
@@ -511,27 +511,27 @@
             "value": "GHAC"
         },
         {
-            "text": "GHS AP",
+            "text": "GHS AP (GHAP)",
             "value": "GHAP"
         },
         {
-            "text": "GHS Supplemental for Brazil",
+            "text": "GHS Supplemental for Brazil (GHBC)",
             "value": "GHBC"
         },
         {
-            "text": "GHS Supplemental for Japan",
+            "text": "GHS Supplemental for Japan (GHJC)",
             "value": "GHJC"
         },
         {
-            "text": "GHS Supplemental for Korea",
+            "text": "GHS Supplemental for Korea (GHKC)",
             "value": "GHKC"
         },
         {
-            "text": "GHS Supplemental for China",
+            "text": "GHS Supplemental for China (GHOC)",
             "value": "GHOC"
         },
         {
-            "text": "Japan GHS",
+            "text": "Japan GHS (GHS)",
             "value": "GHS"
         },
         {
@@ -547,99 +547,99 @@
             "value": "GHSC"
         },
         {
-            "text": "GHS Substance Classifications",
+            "text": "GHS Substance Classifications (GHSZ)",
             "value": "GHSZ"
         },
         {
-            "text": "Health & Nutrition GHS",
+            "text": "Health & Nutrition GHS (HNHS)",
             "value": "HNHS"
         },
         {
-            "text": "IUCLID Holding",
+            "text": "IUCLID Holding (IUC)",
             "value": "IUC"
         },
         {
-            "text": "Default JAP subformat",
+            "text": "Default JAP subformat (JAP)",
             "value": "JAP"
         },
         {
-            "text": "--- Japan GHS ---",
+            "text": "--- Japan GHS (JGHS) ---",
             "value": "JGHS"
         },
         {
-            "text": "--- Korea GHS ---",
+            "text": "--- Korea GHS (KGHS) ---",
             "value": "KGHS"
         },
         {
-            "text": "Appended MSDS",
+            "text": "Appended MSDS (KIT)",
             "value": "KIT"
         },
         {
-            "text": "Default KOR subformat",
+            "text": "Default KOR subformat (KOR)",
             "value": "KOR"
         },
         {
-            "text": "Label",
+            "text": "Label (LBL)",
             "value": "LBL"
         },
         {
-            "text": "Default LEG subformat",
+            "text": "Default LEG subformat (LEG)",
             "value": "LEG"
         },
         {
-            "text": "North America GHS",
+            "text": "North America GHS (NAGH)",
             "value": "NAGH"
         },
         {
-            "text": "North America",
+            "text": "North America (NAM)",
             "value": "NAM"
         },
         {
-            "text": "AGHS Original",
+            "text": "AGHS Original (OAGH)",
             "value": "OAGH"
         },
         {
-            "text": "HN REGULATORY DATA",
+            "text": "HN REGULATORY DATA (RCHZ)",
             "value": "RCHZ"
         },
         {
-            "text": "Regulatory Analysis",
+            "text": "Regulatory Analysis (REG)",
             "value": "REG"
         },
         {
-            "text": "Rules Subformat",
+            "text": "Rules Subformat (RULE)",
             "value": "RULE"
         },
         {
-            "text": "DATA REQUIRED FOR SARA",
+            "text": "DATA REQUIRED FOR SARA (SARA)",
             "value": "SARA"
         },
         {
-            "text": "SDS Request Form",
+            "text": "SDS Request Form (SDSR)",
             "value": "SDSR"
         },
         {
-            "text": "REACH SIMS",
+            "text": "REACH SIMS (SIMS)",
             "value": "SIMS"
         },
         {
-            "text": "Temporary Hold",
+            "text": "Temporary Hold (TEMP)",
             "value": "TEMP"
         },
         {
-            "text": "For Testing",
+            "text": "For Testing (TEST)",
             "value": "TEST"
         },
         {
-            "text": "Toxicology",
+            "text": "Toxicology (TOX)",
             "value": "TOX"
         },
         {
-            "text": "VTI",
+            "text": "VTI (VTI)",
             "value": "VTI"
         },
         {
-            "text": "REACh Subformat",
+            "text": "REACh Subformat (WPR1)",
             "value": "WPR1"
         }
     ]

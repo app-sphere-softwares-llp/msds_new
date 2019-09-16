@@ -66,6 +66,9 @@ export class WercsExtractSearchModel extends WercsExtract {
     RevisionDateFilter: RevisionDate;
     PublishDateFilter: PublishedDate;
     SelectedDateType: 'A' | 'B';
+    ProductOptionCondition: string | 'Contains';
+    StartDate: Date | string | null;
+    EndDate: Date | string | null;
 
     constructor() {
         super();
