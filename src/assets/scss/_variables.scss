@@ -211,7 +211,7 @@ $font-weight-base:          $font-weight-normal !default;
 
 $line-height-base:          1.5 !default;
 
-$font-size-base:            .875rem !default;
+$font-size-base:            .770rem !default;
 $font-size-xl:              1.25rem !default;
 $font-size-lg:              1rem !default;
 $font-size-sm:              .75rem !default;
@@ -377,10 +377,10 @@ $alert-loop: (
 // Form elements config
 $input-padding-x:                1rem !default;
 $input-padding-y:                .55rem !default;
-$input-line-height:              1.5 !default;
+$input-line-height:              1.0 !default;
 
-$input-padding-x-sm:             .6rem  !default;
-$input-padding-y-sm:             .4rem  !default;
+$input-padding-x-sm:             .3rem  !default;
+$input-padding-y-sm:             .2rem  !default;
 $input-font-size-sm:             .75rem !default;
 
 $input-padding-x-lg:             1.25rem !default;

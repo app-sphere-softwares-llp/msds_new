@@ -7,8 +7,9 @@ import {
 import * as FileSaver from 'file-saver';
 import * as XLSX from 'xlsx';
 
-import { NzMessageService, NzNotificationService } from 'ng-zorro-antd';
+import { NzMessageService, NzNotificationService, NzNotificationServiceModule } from 'ng-zorro-antd';
 import { element } from 'protractor';
+import { TitleService } from 'src/app/shared/services/title.service';
 
 const EXCEL_TYPE = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;charset=UTF-8';
 const EXCEL_EXTENSION = '.xlsx';
@@ -21,7 +22,8 @@ export class ResultComponent implements OnInit {
   constructor(
     private searchService: SearchService,
     private messageService: NzMessageService,
-    private notificationService: NzNotificationService
+    private notificationService: NzNotificationService,
+    private titleService: TitleService
   ) {}
 
   displayData: WercsExtract[] = []; // You need to change it as well!
@@ -47,6 +49,7 @@ export class ResultComponent implements OnInit {
 
 
   ngOnInit() {
+    this.titleService.init();
     this.searchModalRequest.QuerySearchModel = this.searchService.searchModal;
     this.searchModalRequest.pageNumber = 1;
     this.searchModalRequest.pageSize = 50;

@@ -642,5 +642,9 @@
             "text": "REACh Subformat (WPR1)",
             "value": "WPR1"
         }
+    ],
+    "Locales":[
+        {"text": "English", "value": "en"},
+        {"text": "German", "value": "ua"}
     ]
 }

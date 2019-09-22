@@ -1,16 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectorRef, AfterContentInit } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from "@angular/router";
 import { Observable } from "rxjs";
 import { distinctUntilChanged, filter, map, startWith } from "rxjs/operators";
 import { IBreadcrumb } from "../../shared/interfaces/breadcrumb.type";
 import { ThemeConstantService } from '../../shared/services/theme-constant.service';
+import {TranslatePipe} from '../../shared/pipes/translate.pipe';
 
 @Component({
     selector: 'app-common-layout',
     templateUrl: './common-layout.component.html',
+    providers: [TranslatePipe]
 })
 
-export class CommonLayoutComponent  {
+export class CommonLayoutComponent implements AfterContentInit {
 
     breadcrumbs$: Observable<IBreadcrumb[]>;
     contentHeaderDisplay: string;
@@ -19,7 +21,8 @@ export class CommonLayoutComponent  {
     isExpand: boolean;
     selectedHeaderColor: string;
 
-    constructor(private router: Router,  private activatedRoute: ActivatedRoute, private themeService: ThemeConstantService) {
+    constructor(private router: Router,  private activatedRoute: ActivatedRoute, private themeService: ThemeConstantService
+                , private translate: TranslatePipe, private cdr: ChangeDetectorRef) {
         this.router.events.pipe(
             filter(event => event instanceof NavigationEnd),
             map(() => {
@@ -57,7 +60,7 @@ export class CommonLayoutComponent  {
 
         if (route.routeConfig) {
             if (route.routeConfig.data) {
-                label = route.routeConfig.data['title'];
+                label = this.translate.transform(route.routeConfig.data['title']);
                 path += route.routeConfig.path;
             }
         } else {
@@ -76,4 +79,13 @@ export class CommonLayoutComponent  {
         }
         return newBreadcrumbs;
     }
+
+    
+  ngAfterContentInit(): void {
+      setTimeout(()=>{
+        this.activatedRoute.snapshot.data["title"] = "Aashish";
+        this.cdr.detectChanges();
+      },1000);
+}
+
 }

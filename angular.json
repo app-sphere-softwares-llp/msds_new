@@ -52,7 +52,21 @@
                           "extractLicenses": true,
                           "vendorChunk": false,
                           "buildOptimizer": true
-                      }
+                      },
+                      "en": {  
+                        "aot": true,  
+                        "i18nFile": "src/app/translate/messages.xlf",  
+                        "i18nFormat": "xlf",  
+                        "i18nLocale": "en",  
+                        "i18nMissingTranslation": "error"  
+                      },  
+                      "fr": {  
+                        "aot": true,  
+                        "i18nFile": "src/app/translate/messages.fr.xlf",  
+                        "i18nFormat": "xlf",  
+                        "i18nLocale": "fr",  
+                        "i18nMissingTranslation": "error"  
+                      } 
                   }
               },
               "serve": {

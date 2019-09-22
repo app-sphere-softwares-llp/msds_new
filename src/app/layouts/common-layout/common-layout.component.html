@@ -15,7 +15,7 @@
                     <i class="m-r-5 text-gray" nz-icon nzType="home"></i>
                     <nz-breadcrumb-item *ngFor="let breadcrumb of breadcrumbs$ | async">
                         <a [routerLink]="breadcrumb.url">
-                            {{ breadcrumb.label }}
+                            {{ breadcrumb.label | translate }}
                         </a>
                     </nz-breadcrumb-item>
                 </nz-breadcrumb>

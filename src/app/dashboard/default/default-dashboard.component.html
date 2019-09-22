@@ -22,11 +22,11 @@
         <nz-card>
 
             <div class="row">
-                <div class="col-md-2">
-                    <span>FMC Business</span>
+                <div class="col-md-1">
+                    <span>Business</span>
 
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <nz-select style="width: 100%;" nzSize="small" nzShowSearch nzAllowClear
                         [(ngModel)]="searchModel.FMCBusiness" nzPlaceHolder="Select a Business">
                         <nz-option *ngFor="let option of fmcBusiness" [nzLabel]="option.text" [nzValue]="option.value">
@@ -35,26 +35,11 @@
 
 
                 </div>
-                <div class="col-md-2">
-                    <span>Format</span>
-
-                </div>
-                <div class="col-md-4">
-                    <nz-select style="width: 100%;" nzSize="small" nzShowSearch nzAllowClear
-                        [(ngModel)]="searchModel.FileFormat" nzPlaceHolder="Select a Format">
-                        <nz-option *ngFor="let option of formats" [nzLabel]="option.text" [nzValue]="option.value">
-                        </nz-option>
-                    </nz-select>
-
-                </div>
-            </div>
-            <nz-divider></nz-divider>
-            <div class="row">
-                <div class="col-md-2">
+                <div class="col-md-1">
                     <span>Language</span>
 
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <nz-select style="width: 100%;" nzSize="small" nzShowSearch nzAllowClear
                         [(ngModel)]="searchModel.Language" nzPlaceHolder="Select a Language">
                         <nz-option *ngFor="let option of languages" [nzLabel]="option.text" [nzValue]="option.value">
@@ -62,12 +47,12 @@
                     </nz-select>
 
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-1">
                     <span>Sub Format</span>
 
 
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <nz-select style="width: 100%;" nzSize="small" nzShowSearch nzAllowClear
                         [(ngModel)]="searchModel.WercsSubFormat" nzPlaceHolder="Select a Sub Format">
                         <nz-option *ngFor="let option of subFormats" [nzLabel]="option.text" [nzValue]="option.value">
@@ -75,20 +60,21 @@
                     </nz-select>
 
                 </div>
+               
             </div>
-
+        
 
 
 
         </nz-card>
     </div>
-    <div class="col-md-8 col-lg-12">
+    <div class="col-md-12 col-lg-12">
         <nz-card>
             <div class="row">
                 <div class="col-lg-12">
-                    <h5>Search By</h5>
+                    <h5>Search By Publish Date</h5>
                 </div>
-                <div class="col-lg-12">
+                <!-- <div class="col-lg-12">
                     <div class="media align-items-center">
                         <nz-radio-group [(ngModel)]="searchModel.SelectedDateType"
                             (ngModelChange)="onDateTypeChange($event)">
@@ -97,8 +83,8 @@
 
                         </nz-radio-group>
                     </div>
-                </div>
-                <nz-divider></nz-divider>
+                </div> -->
+                <!-- <nz-divider></nz-divider> -->
                 <div class="col-lg-12">
                     <div class="row">
                         <div class="col-lg-12">
@@ -126,7 +112,7 @@
                                         nzSize="small" [(ngModel)]="searchModel.StartDate"
                                         [nzFormat]="dateFormat" (ngModelChange)="onChange($event)"></nz-date-picker>
                                     <nz-range-picker [nzDisabled]="isDaysOptionSelected" *ngIf="showRangeFilter"
-                                         defaultValue={[moment(searchModel.StartDate,"MMM dd yyyy"),moment(searchModel.EndDate, "MMM dd yyyy")]}
+                                         defaultValue={searchModel.StartDate,searchModel.EndDate}
                                          nzSize="default" [(ngModel)]="dateRange"
                                         [nzFormat]="dateFormat" (ngModelChange)="onChange($event)"></nz-range-picker>
                                 </div>
@@ -153,7 +139,7 @@
             </div>
         </nz-card>
     </div>
-    <div class="col-md-8 col-lg-12">
+    <div class="col-md-12 col-lg-12">
         <nz-card>
             <div class="row">
                 <div class="col-lg-12">

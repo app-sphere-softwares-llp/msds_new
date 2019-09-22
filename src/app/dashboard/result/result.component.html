@@ -18,7 +18,8 @@
         
         <thead> 
             <tr>
-                <th>Action</th>
+                <th>Open PDF</th>
+                <th>Copy Link</th>
                 <th>Specification ID</th>
                 <th>Product Name</th>
                 <th>Format</th>
@@ -50,15 +51,19 @@
         <tbody>
             <ng-template ngFor let-data [ngForOf]="smallTable.data">
                 <tr>
-                    <td style="text-align:center !important; padding: 13px;">
-                        <nz-button-group>
-                            <a (click)="openPDF(data)">
+                    <td style="text-align:center !important">
+                       
+                            <a (click)="openPDF(data)" style="font-size: 20px">
                                 <i nz-icon nzType="file-pdf" nzTheme="outline"></i>
                             </a>
-                            <a (click)="copyLink(data)">
-                                <i nz-icon nzType="copy" nzTheme="outline"></i>
-                            </a>
-                        </nz-button-group>
+                           
+                           
+                     
+                    </td>
+                    <td style="text-align:center !important">
+                        <a (click)="copyLink(data)" style="font-size: 20px">
+                            <i nz-icon nzType="copy" nzTheme="outline"></i>
+                        </a>
                     </td>
                     <td>{{data.SpecificationID}}</td>
                     <td>{{data.ProductName}}</td>

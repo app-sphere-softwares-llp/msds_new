@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, APP_INITIALIZER } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgZorroAntdModule, NZ_I18N, en_US } from 'ng-zorro-antd';
 import { registerLocaleData } from '@angular/common';
@@ -15,12 +15,17 @@ import { FullLayoutComponent } from './layouts/full-layout/full-layout.component
 
 import { NgChartjsModule } from 'ng-chartjs';
 import { ThemeConstantService } from './shared/services/theme-constant.service';
+import { TranslateService } from './shared/services/translate.service';
+
 
 
 
 
 registerLocaleData(en);
-
+export function setupTranslateFactory(
+    service: TranslateService): Function {
+    return () => service.use('en');
+  }
 @NgModule({
     declarations: [
         AppComponent,
@@ -42,6 +47,13 @@ registerLocaleData(en);
         { 
             provide: NZ_I18N,
             useValue: en_US, 
+        },
+        TranslateService,
+        {
+          provide: APP_INITIALIZER,
+          useFactory: setupTranslateFactory,
+          deps: [ TranslateService ],
+          multi: true
         },
         ThemeConstantService
     ],

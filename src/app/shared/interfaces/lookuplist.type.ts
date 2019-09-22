@@ -3,10 +3,11 @@ export interface LookUpList {
     Languages:  LookUpObject[];
     Formats:  LookUpObject[];
     SubFormats: LookUpObject[];
+    Locales: LookUpObject[];
 
 }
 
-interface LookUpObject {
+export interface LookUpObject {
     text: string;
     value: string;
 }

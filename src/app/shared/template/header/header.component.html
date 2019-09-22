@@ -2,10 +2,10 @@
     <div class="logo logo-dark">
         <a href="">
             <img class="logo-size" src="assets/images/logo/FMC-logo.GIF" alt="Logo">
-           
+
         </a>
     </div>
-  
+
     <div class="nav-wrap">
         <ul class="nav-left">
             <li class="desktop-toggle">
@@ -25,22 +25,35 @@
                 <!-- <nz-drawer [nzWidth]="380" nzTitle="Search" [nzVisible]="searchVisible" nzPlacement="left" (nzOnClose)="searchToggle()">
                     <app-search></app-search>
                 </nz-drawer> -->
-            </li>
         </ul>
         <ul class="nav-right">
             <li>
                 <h3 style="margin-bottom: 0">
-                    Material Safety Data Sheet (MSDS) Viewer
+                    Safety Data Sheet (SDS) Viewer
                 </h3>
             </li>
+        </ul>
+        <ul class="nav-right">
+
             <li>
-                <a (click)="quickViewToggle()">
-                    <i nz-icon nzType="appstore" theme="outline"></i>
-                </a>
-                <nz-drawer [nzWidth]="280" nzTitle="Quick View" [nzClosable]="false" [nzVisible]="quickViewVisible" nzPlacement="right" (nzOnClose)="quickViewToggle()">
-                    <app-quick-view></app-quick-view>
-                </nz-drawer>
+                <span class="p-h-10 pointer" nz-dropdown [nzDropdownMenu]="profile" [nzTrigger]="'click'"
+                    [nzPlacement]="'bottomRight'">
+                    <a>{{defaultLanguage}}</a>  <i nz-icon nzType="caret-down" nzTheme="outline" style="font-size: 10px; color: #08c;"></i>
+                </span>
+                <nz-dropdown-menu #profile="nzDropdownMenu">
+                    <ul nz-menu>
+                        <li nz-menu-item *ngFor="let item of locales">
+                            <a (click)="selectLanguage(item)" class="p-v-5 d-flex align-items-center justify-content-between">
+                                <div>
+                                    <span class="m-l-10">{{item.text}}</span>
+                                  
+                                </div>
+                                
+                            </a>
+                        </li>
+                    </ul>
+                </nz-dropdown-menu>
             </li>
         </ul>
     </div>
-</div>    
+</div>

@@ -1,9 +1,9 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, ChangeDetectorRef, AfterContentInit } from "@angular/core";
 import { SearchService } from "../../shared/services/search.service";
 import { LookUpList } from "../../shared/interfaces/lookuplist.type";
 import { WercsExtractSearchModel } from "../../shared/interfaces/search.type";
 import { NzNotificationService } from "ng-zorro-antd";
-import { Router } from "@angular/router";
+import { Router, ActivatedRoute } from "@angular/router";
 
 @Component({
   templateUrl: "./default-dashboard.component.html"
@@ -12,7 +12,9 @@ export class DefaultDashboardComponent implements OnInit {
   constructor(
     private searchService: SearchService,
     private notificationService: NzNotificationService,
-    private router: Router
+    private router: Router,
+    private route: ActivatedRoute,
+    private cdr: ChangeDetectorRef
   ) {}
 
   dateFormat = "dd MMM yyyy";
@@ -28,6 +30,7 @@ export class DefaultDashboardComponent implements OnInit {
   public dateRange: any;
 
   ngOnInit() {
+   
     this.searchModel.SelectedDateType = "A";
     this.searchModel.PublishDateFilter.LastPublishDays = 15;
     this.searchModel.RevisionDateFilter.LastRevisionDays = 15;
