@@ -24,6 +24,7 @@ export class DefaultDashboardComponent implements OnInit {
   public languages: any;
   public formats: any;
   public subFormats: any;
+  public validityAreas: any;
   public searchModel = new WercsExtractSearchModel();
   public showRangeFilter: boolean;
   public isDaysOptionSelected: boolean;
@@ -35,7 +36,8 @@ export class DefaultDashboardComponent implements OnInit {
     this.searchModel.PublishDateFilter.LastPublishDays = 15;
     this.searchModel.RevisionDateFilter.LastRevisionDays = 15;
     this.searchModel.ProductOptionCondition = "Contains";
-    this.showRangeFilter = false;
+    this.searchModel.PublishDateFilter.FilterType = "Range";
+    this.showRangeFilter = true;
     this.isDaysOptionSelected = false;
     this.notificationService.config({
       nzPlacement: "bottomRight"
@@ -46,6 +48,7 @@ export class DefaultDashboardComponent implements OnInit {
       this.languages = this.lookUpList.Languages;
       this.formats = this.lookUpList.Formats;
       this.subFormats = this.lookUpList.SubFormats;
+      this.validityAreas = this.lookUpList.ValidityAreas;
     });
 
     if (this.searchService.searchModal) {
@@ -63,6 +66,11 @@ export class DefaultDashboardComponent implements OnInit {
         this.showRangeFilter = true;
       }
     }
+
+    this.searchModel.FMCBusiness = "";
+    this.searchModel.Language = "";
+    this.searchModel.WercsSubFormat = "";
+    this.searchModel.ValidityArea = "";
   }
 
   onChange(result: Date): void {

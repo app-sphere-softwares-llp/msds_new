@@ -7,14 +7,14 @@ import { ThemeConstantService } from '../shared/services/theme-constant.service'
 import { DefaultDashboardComponent } from './default/default-dashboard.component';
 import { WithBreadcrumbDashboardComponent } from './with-breadcrumb/with-breadcrumb-dashboard.component';
 import { ResultComponent } from './result/result.component';
-
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 @NgModule({
     imports: [
         CommonModule,
         SharedModule,
-        DashboardRoutingModule
-     
+        DashboardRoutingModule,
+        Ng2SearchPipeModule
     ],
     exports: [],
     declarations: [

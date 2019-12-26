@@ -62,6 +62,22 @@
                 </div>
                
             </div>
+            <nz-divider></nz-divider>
+            <div class="row">
+                    <div class="col-md-1">
+                            <span>Validity Areas</span>
+        
+        
+                        </div>
+                        <div class="col-md-3">
+                            <nz-select style="width: 100%;" nzSize="small" nzShowSearch nzAllowClear
+                                [(ngModel)]="searchModel.ValidityAreas" nzPlaceHolder="Select a Validity Area">
+                                <nz-option *ngFor="let option of validityAreas" [nzLabel]="option.text" [nzValue]="option.value">
+                                </nz-option>
+                            </nz-select>
+        
+                        </div>
+            </div>
         
 
 
@@ -107,7 +123,7 @@
                                         <nz-option nzLabel="Range" nzValue="Range"></nz-option>
                                     </nz-select>
                                 </div>
-                                <div class="col-lg-8">
+                                <div class="col-lg-3">
                                     <nz-date-picker [nzDisabled]="isDaysOptionSelected" *ngIf="!showRangeFilter"
                                         nzSize="small" [(ngModel)]="searchModel.StartDate"
                                         [nzFormat]="dateFormat" (ngModelChange)="onChange($event)"></nz-date-picker>
@@ -115,6 +131,8 @@
                                          defaultValue={searchModel.StartDate,searchModel.EndDate}
                                          nzSize="default" [(ngModel)]="dateRange"
                                         [nzFormat]="dateFormat" (ngModelChange)="onChange($event)"></nz-range-picker>
+                                </div>
+                                <div class="col-lg-3">
                                 </div>
                             </div>
                         </div>
@@ -265,19 +283,7 @@
                             </div>
 
                         </div>
-                        <div class="col-md-2">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    IUPAC
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <input nz-input placeholder="Enter IUPAC" nzSize="small"
-                                        [(ngModel)]="searchModel.IUPAC">
-                                </div>
-                            </div>
-                        </div>
+                        
                         <div class="col-md-2">
                             <div class="row">
                                 <div class="col-lg-12">
@@ -294,27 +300,28 @@
                         <div class="col-md-2">
                             <div class="row">
                                 <div class="col-lg-12">
-                                    CAS MAIN
+                                        Legacy SDS ID
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <input nz-input placeholder="Enter CAS MAIN" nzSize="small">
+                                    <input nz-input placeholder="Enter Legacy SDS ID" nzSize="small" [(ngModel)]="searchModel.LegacySDSID">
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-2">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    CMR
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                            Legacy Specification ID
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <input nz-input placeholder="Enter Legacy Spec ID" nzSize="small"
+                                            [(ngModel)]="searchModel.LegacySpecID">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <input nz-input placeholder="Enter CMR" nzSize="small">
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

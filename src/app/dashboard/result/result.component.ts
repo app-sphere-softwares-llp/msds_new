@@ -33,6 +33,7 @@ export class ResultComponent implements OnInit {
   pageSize = 50;
   total = 1;
   enableExcelDownloadFile = false;
+  searchText: string;
 
   public exportAsExcelFile(): void {
     const worksheet: XLSX.WorkSheet = XLSX.utils.json_to_sheet(this.displayData);
@@ -88,6 +89,11 @@ export class ResultComponent implements OnInit {
         this.isDataInProcess = false;
       }
     );
+  }
+
+  handleSearchEvent(searchText: any)
+  {
+    console.log(searchText.target.value);
   }
 
   copyLink(link: WercsExtract) {

@@ -4,6 +4,7 @@ export interface LookUpList {
     Formats:  LookUpObject[];
     SubFormats: LookUpObject[];
     Locales: LookUpObject[];
+    ValidityAreas: LookUpObject[];
 
 }
 

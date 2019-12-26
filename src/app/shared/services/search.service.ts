@@ -41,6 +41,6 @@ export class SearchService {
     }
 
     public searchData(modal: SearchRequestModal): Observable<SearchRequestModal> {
-        return this.http.post<SearchRequestModal>('https://msdsapi.azurewebsites.net/api/WercsExtracts/GetPagedData', modal);
+        return this.http.post<SearchRequestModal>('http://localhost/msdsapi/api/WercsExtracts/GetPagedData', modal);
     }
 }

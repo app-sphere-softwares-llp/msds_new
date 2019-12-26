@@ -3,8 +3,10 @@
        <a (click)='exportAsExcelFile()'> Download <i nz-icon nzType="file-excel" nzTheme="outline"></i></a>
        <nz-divider nzType="vertical"></nz-divider>
        <span>Total Records: {{ total }}</span>
+        <nz-divider nzType="vertical"></nz-divider>
+       <input  placeholder="Search" type="text" [(ngModel)]="searchText" />
     </div>
-    <nz-table #filterTable #smallTable
+    <nz-table #filterTable #smallTable 
     [nzData]="displayData" [nzPaginationPosition]="'both'"
     [nzLoading]="isDataInProcess" [nzShowSizeChanger]="true"
     [nzScroll]="{x: '200px'}" [nzPageSizeOptions]="[50 ,100, 500, 5000]"
@@ -49,8 +51,8 @@
 
 
         <tbody>
-            <ng-template ngFor let-data [ngForOf]="smallTable.data">
-                <tr>
+            <!-- <ng-template ngFor let-data [ngForOf]="smallTable.data"> -->
+                <tr *ngFor="let data of displayData | filter:searchText">
                     <td style="text-align:center !important">
                        
                             <a (click)="openPDF(data)" style="font-size: 20px">
@@ -90,7 +92,7 @@
                     <td>{{data.ValidityAreaDescription}}</td>
                     <td>{{data.WercsRevisionNo}}</td>
                 </tr>
-            </ng-template>
+            <!-- </ng-template> -->
         </tbody>
     </nz-table>
 </nz-card>

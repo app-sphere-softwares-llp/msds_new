@@ -1,42 +1,22 @@
 {
     "FMCBusiness": [
         {
+            "text": "All",
+            "value": ""
+        },
+        {
             "text": "FMC",
             "value": "FMC"
         },
         {
             "text": "APG",
             "value": "APG-APG"
-        },
-        {
-            "text": "Alkali",
-            "value": "CPG-ACD"
-        },
-        {
-            "text": "Environmental Solutions",
-            "value": "CPG-ESD"
-        },
-        {
-            "text": "Natronx",
-            "value": "CPG-NXD"
-        },
-        {
-            "text": "Peroxygens",
-            "value": "CPG-PXD"
-        },
-        {
-            "text": "Biopolymer",
-            "value": "SCG-BIO"
-        },
-        {
-            "text": "The Wercs, Ltd.",
-            "value": "WERCS"
         }
     ],
     "Languages": [
         {
-            "value": "All",
-            "text": "All"
+            "value": "",
+            "text": "ALL"
         },
         {
             "value": "EN",
@@ -272,377 +252,704 @@
     "SubFormats": [
         {
             "text": " All ",
-            "value": "All"
+            "value": ""
         },
         {
-            "text": "APG Asia Pacific (AGAP)",
-            "value": "AGAP"
+            "text": "WERCS - OSHA GHS",
+            "value": ""
         },
         {
-            "text": "APG Canada (AGCA)",
-            "value": "AGCA"
+            "text": "WERCS - Brazil GHS",
+            "value": ""
         },
         {
-            "text": "APG CLP GHS (AGCL)",
-            "value": "AGCL"
+            "text": "WERCS - China GHS",
+            "value": ""
         },
         {
-            "text": "AG COPY TEMPLATE (AGCP)",
-            "value": "AGCP"
+            "text": "WERCS - EU GHS",
+            "value": ""
         },
         {
-            "text": "APG Data Review (AGDR)",
-            "value": "AGDR"
+            "text": "WERCS - Japan GHS",
+            "value": ""
         },
         {
-            "text": "APG EU SDS (AGEU)",
-            "value": "AGEU"
-        },
-        {
-            "text": "--- OSHA GHS (AGHS) ---",
-            "value": "AGHS"
-        },
-        {
-            "text": "APG Mexico (AGMX)",
-            "value": "AGMX"
-        },
-        {
-            "text": "APG North America (AGNA)",
-            "value": "AGNA"
-        },
-        {
-            "text": "APG Regulatory Analysis (AGRA)",
-            "value": "AGRA"
-        },
-        {
-            "text": "APG SDS Request Form (AGSR)",
-            "value": "AGSR"
-        },
-        {
-            "text": "AGUK-LABEL (AGUK)",
-            "value": "AGUK"
-        },
-        {
-            "text": "America, Latin and Central (ALC)",
-            "value": "ALC"
-        },
-        {
-            "text": "Alternatives saved as options (ALT)",
-            "value": "ALT"
-        },
-        {
-            "text": "Default AMS subformat (AMS)",
-            "value": "AMS"
-        },
-        {
-            "text": "China (APCN)",
-            "value": "APCN"
-        },
-        {
-            "text": "APG GHS NA (APHS)",
-            "value": "APHS"
-        },
-        {
-            "text": "Japan (APJP)",
-            "value": "APJP"
-        },
-        {
-            "text": "Korea (APKO)",
-            "value": "APKO"
-        },
-        {
-            "text": "Approval Summary (APR)",
-            "value": "APR"
-        },
-        {
-            "text": "Ag Solutions Asia Pacific (ASAP)",
-            "value": "ASAP"
-        },
-        {
-            "text": "Ag Solutions Japan GHS (ASJP)",
-            "value": "ASJP"
-        },
-        {
-            "text": "Ag Solutions Korea (ASKR)",
-            "value": "ASKR"
-        },
-        {
-            "text": "Ag Solutions Latin America (ASLA)",
-            "value": "ASLA"
-        },
-        {
-            "text": "Ag Solutions North America (ASNA)",
-            "value": "ASNA"
-        },
-        {
-            "text": "Australia, New Zealand (AUS)",
-            "value": "AUS"
-        },
-        {
-            "text": "Australia preGHS (AUST)",
-            "value": "AUST"
-        },
-        {
-            "text": "--- Brazil GHS (BGHS) ---",
-            "value": "BGHS"
-        },
-        {
-            "text": "BioPolymer Asia Pacific (BPAP)",
-            "value": "BPAP"
-        },
-        {
-            "text": "BioP CLP GHS (BPCL)",
-            "value": "BPCL"
-        },
-        {
-            "text": "BioPolymer Data Review (BPDR)",
-            "value": "BPDR"
-        },
-        {
-            "text": "BioP EU REACH SDS (BPEU)",
-            "value": "BPEU"
-        },
-        {
-            "text": "BioPolymer North American MSDS (BPNA)",
-            "value": "BPNA"
-        },
-        {
-            "text": "BioPolymer Regulatory Analysis (BPRA)",
-            "value": "BPRA"
-        },
-        {
-            "text": "BioPolymer SDS Request Form (BPSR)",
-            "value": "BPSR"
-        },
-        {
-            "text": "Default BRZ subformat (BRZ)",
-            "value": "BRZ"
-        },
-        {
-            "text": "--- China GHS (CGHS) ---",
-            "value": "CGHS"
-        },
-        {
-            "text": "Default CHN subformat (CHN)",
-            "value": "CHN"
-        },
-        {
-            "text": "CLP (CLP1)",
-            "value": "CLP1"
-        },
-        {
-            "text": "Raw Material Introduction (CMA)",
-            "value": "CMA"
-        },
-        {
-            "text": "COPY Subformat - Peroxychem (COPY)",
-            "value": "COPY"
-        },
-        {
-            "text": "CPG Asia Pacific (CPAP)",
-            "value": "CPAP"
-        },
-        {
-            "text": "CPG CLP GHS (CPCL)",
-            "value": "CPCL"
-        },
-        {
-            "text": "CPG Data Review (CPDR)",
-            "value": "CPDR"
-        },
-        {
-            "text": "CPG EU REACh Subformat (CPEU)",
-            "value": "CPEU"
-        },
-        {
-            "text": "CPNA GHS (CPGH)",
-            "value": "CPGH"
-        },
-        {
-            "text": "CPG North American MSDS (CPNA)",
-            "value": "CPNA"
-        },
-        {
-            "text": "CPG Regulatory Analysis (CPRA)",
-            "value": "CPRA"
-        },
-        {
-            "text": "CPG SDS Request Form (CPSR)",
-            "value": "CPSR"
-        },
-        {
-            "text": "ANALYSIS (DATA)",
-            "value": "DATA"
-        },
-        {
-            "text": "--- EU GHS (EGHS) ---",
-            "value": "EGHS"
-        },
-        {
-            "text": "Experimental SDSs (ESDS)",
-            "value": "ESDS"
-        },
-        {
-            "text": "Exposure Scenario 2 (ESN)",
-            "value": "ESN"
-        },
-        {
-            "text": "EU REACH SDS (EU)",
-            "value": "EU"
-        },
-        {
-            "text": "EU - Incl ALL national codes (EUAL)",
-            "value": "EUAL"
-        },
-        {
-            "text": "EU Experimental SDSs (EUEX)",
-            "value": "EUEX"
-        },
-        {
-            "text": "Exposure Scenarios (MTR/EXSC) (EXSC)",
-            "value": "EXSC"
-        },
-        {
-            "text": "Demonstration Only (FSDS)",
-            "value": "FSDS"
-        },
-        {
-            "text": "GHAC",
-            "value": "GHAC"
-        },
-        {
-            "text": "GHS AP (GHAP)",
-            "value": "GHAP"
-        },
-        {
-            "text": "GHS Supplemental for Brazil (GHBC)",
-            "value": "GHBC"
-        },
-        {
-            "text": "GHS Supplemental for Japan (GHJC)",
-            "value": "GHJC"
-        },
-        {
-            "text": "GHS Supplemental for Korea (GHKC)",
-            "value": "GHKC"
-        },
-        {
-            "text": "GHS Supplemental for China (GHOC)",
-            "value": "GHOC"
-        },
-        {
-            "text": "Japan GHS (GHS)",
-            "value": "GHS"
-        },
-        {
-            "text": "Korean GHS",
-            "value": "GHS"
-        },
-        {
-            "text": "Globally Harmonized System",
-            "value": "GHS"
-        },
-        {
-            "text": "GHS Substance Classifications",
-            "value": "GHSC"
-        },
-        {
-            "text": "GHS Substance Classifications (GHSZ)",
-            "value": "GHSZ"
-        },
-        {
-            "text": "Health & Nutrition GHS (HNHS)",
-            "value": "HNHS"
-        },
-        {
-            "text": "IUCLID Holding (IUC)",
-            "value": "IUC"
-        },
-        {
-            "text": "Default JAP subformat (JAP)",
-            "value": "JAP"
-        },
-        {
-            "text": "--- Japan GHS (JGHS) ---",
-            "value": "JGHS"
-        },
-        {
-            "text": "--- Korea GHS (KGHS) ---",
-            "value": "KGHS"
-        },
-        {
-            "text": "Appended MSDS (KIT)",
-            "value": "KIT"
-        },
-        {
-            "text": "Default KOR subformat (KOR)",
-            "value": "KOR"
-        },
-        {
-            "text": "Label (LBL)",
-            "value": "LBL"
-        },
-        {
-            "text": "Default LEG subformat (LEG)",
-            "value": "LEG"
-        },
-        {
-            "text": "North America GHS (NAGH)",
-            "value": "NAGH"
-        },
-        {
-            "text": "North America (NAM)",
-            "value": "NAM"
-        },
-        {
-            "text": "AGHS Original (OAGH)",
-            "value": "OAGH"
-        },
-        {
-            "text": "HN REGULATORY DATA (RCHZ)",
-            "value": "RCHZ"
-        },
-        {
-            "text": "Regulatory Analysis (REG)",
-            "value": "REG"
-        },
-        {
-            "text": "Rules Subformat (RULE)",
-            "value": "RULE"
-        },
-        {
-            "text": "DATA REQUIRED FOR SARA (SARA)",
-            "value": "SARA"
-        },
-        {
-            "text": "SDS Request Form (SDSR)",
-            "value": "SDSR"
-        },
-        {
-            "text": "REACH SIMS (SIMS)",
-            "value": "SIMS"
-        },
-        {
-            "text": "Temporary Hold (TEMP)",
-            "value": "TEMP"
-        },
-        {
-            "text": "For Testing (TEST)",
-            "value": "TEST"
-        },
-        {
-            "text": "Toxicology (TOX)",
-            "value": "TOX"
-        },
-        {
-            "text": "VTI (VTI)",
-            "value": "VTI"
-        },
-        {
-            "text": "REACh Subformat (WPR1)",
-            "value": "WPR1"
+            "text": "WERCS - Korea GHS",
+            "value": ""
         }
     ],
+    "ValidityAreas": [
+            {
+                "value": "",
+                "text": "ALL"
+            },
+            {
+                "value": "AE",
+                "text": "United Arab Emirates"
+            },
+            {
+                "value": "AG",
+                "text": "Antigua/Barbuda"
+            },
+            {
+                "value": "AL",
+                "text": "Albania"
+            },
+            {
+                "value": "AM",
+                "text": "Armenia"
+            },
+            {
+                "value": "AO",
+                "text": "Angola"
+            },
+            {
+                "value": "AR",
+                "text": "Argentina"
+            },
+            {
+                "value": "AT",
+                "text": "Austria"
+            },
+            {
+                "value": "AU",
+                "text": "Australia"
+            },
+            {
+                "value": "AW",
+                "text": "Aruba"
+            },
+            {
+                "value": "AZ",
+                "text": "Azerbaijan"
+            },
+            {
+                "value": "BA",
+                "text": "Bosnia-Herzegowina"
+            },
+            {
+                "value": "BB",
+                "text": "Barbados"
+            },
+            {
+                "value": "BD",
+                "text": "Bangladesh"
+            },
+            {
+                "value": "BE",
+                "text": "Belgium"
+            },
+            {
+                "value": "BF",
+                "text": "Burkina-Faso"
+            },
+            {
+                "value": "BG",
+                "text": "Bulgaria"
+            },
+            {
+                "value": "BH",
+                "text": "Bahrain"
+            },
+            {
+                "value": "BJ",
+                "text": "Benin"
+            },
+            {
+                "value": "BM",
+                "text": "Bermuda"
+            },
+            {
+                "value": "BN",
+                "text": "Brunei Dar-es-S"
+            },
+            {
+                "value": "BO",
+                "text": "Bolivia"
+            },
+            {
+                "value": "BR",
+                "text": "Brazil"
+            },
+            {
+                "value": "BS",
+                "text": "Bahamas"
+            },
+            {
+                "value": "BW",
+                "text": "Botswana"
+            },
+            {
+                "value": "BY",
+                "text": "Belarus"
+            },
+            {
+                "value": "BZ",
+                "text": "Belize"
+            },
+            {
+                "value": "CA",
+                "text": "Canada"
+            },
+            {
+                "value": "CG",
+                "text": "Rep.of Congo"
+            },
+            {
+                "value": "CH",
+                "text": "Switzerland"
+            },
+            {
+                "value": "CI",
+                "text": "Ivory Coast"
+            },
+            {
+                "value": "CL",
+                "text": "Chile"
+            },
+            {
+                "value": "CM",
+                "text": "Cameroon"
+            },
+            {
+                "value": "CN",
+                "text": "China"
+            },
+            {
+                "value": "CO",
+                "text": "Colombia"
+            },
+            {
+                "value": "CR",
+                "text": "Costa Rica"
+            },
+            {
+                "value": "CS",
+                "text": "Serbia/Monteneg"
+            },
+            {
+                "value": "CV",
+                "text": "Cape Verde"
+            },
+            {
+                "value": "CW",
+                "text": "Curacao"
+            },
+            {
+                "value": "CY",
+                "text": "Cyprus"
+            },
+            {
+                "value": "CZ",
+                "text": "Czech Republic"
+            },
+            {
+                "value": "DE",
+                "text": "Germany"
+            },
+            {
+                "value": "DK",
+                "text": "Denmark"
+            },
+            {
+                "value": "DM",
+                "text": "Dominica"
+            },
+            {
+                "value": "DO",
+                "text": "Dominican Republic"
+            },
+            {
+                "value": "DZ",
+                "text": "Algeria"
+            },
+            {
+                "value": "EC",
+                "text": "Ecuador"
+            },
+            {
+                "value": "EE",
+                "text": "Estonia"
+            },
+            {
+                "value": "EG",
+                "text": "Egypt"
+            },
+            {
+                "value": "ES",
+                "text": "Spain"
+            },
+            {
+                "value": "ET",
+                "text": "Ethiopia"
+            },
+            {
+                "value": "FI",
+                "text": "Finland"
+            },
+            {
+                "value": "FK",
+                "text": "Falkland Islnds"
+            },
+            {
+                "value": "FR",
+                "text": "France"
+            },
+            {
+                "value": "GB",
+                "text": "Great Britain"
+            },
+            {
+                "value": "GD",
+                "text": "Grenada"
+            },
+            {
+                "value": "GE",
+                "text": "Georgia"
+            },
+            {
+                "value": "GF",
+                "text": "French Guiana"
+            },
+            {
+                "value": "GH",
+                "text": "Ghana"
+            },
+            {
+                "value": "GM",
+                "text": "Gambia"
+            },
+            {
+                "value": "GN",
+                "text": "Guinea"
+            },
+            {
+                "value": "GP",
+                "text": "Guadeloupe"
+            },
+            {
+                "value": "GR",
+                "text": "Greece"
+            },
+            {
+                "value": "GT",
+                "text": "Guatemala"
+            },
+            {
+                "value": "GW",
+                "text": "Guinea-Bissau"
+            },
+            {
+                "value": "GY",
+                "text": "Guyana"
+            },
+            {
+                "value": "HK",
+                "text": "Hong Kong"
+            },
+            {
+                "value": "HN",
+                "text": "Honduras"
+            },
+            {
+                "value": "HR",
+                "text": "Croatia"
+            },
+            {
+                "value": "HT",
+                "text": "Haiti"
+            },
+            {
+                "value": "HU",
+                "text": "Hungary"
+            },
+            {
+                "value": "IC",
+                "text": "Canary Islands"
+            },
+            {
+                "value": "ID",
+                "text": "Indonesia"
+            },
+            {
+                "value": "IE",
+                "text": "Ireland"
+            },
+            {
+                "value": "IL",
+                "text": "Israel"
+            },
+            {
+                "value": "IN",
+                "text": "India"
+            },
+            {
+                "value": "IQ",
+                "text": "Iraq"
+            },
+            {
+                "value": "IS",
+                "text": "Iceland"
+            },
+            {
+                "value": "IT",
+                "text": "Italy"
+            },
+            {
+                "value": "JM",
+                "text": "Jamaica"
+            },
+            {
+                "value": "JO",
+                "text": "Jordan"
+            },
+            {
+                "value": "JP",
+                "text": "Japan"
+            },
+            {
+                "value": "KE",
+                "text": "Kenya"
+            },
+            {
+                "value": "KG",
+                "text": "Kyrgyzstan"
+            },
+            {
+                "value": "KH",
+                "text": "Cambodia"
+            },
+            {
+                "value": "KR",
+                "text": "South Korea"
+            },
+            {
+                "value": "KW",
+                "text": "Kuwait"
+            },
+            {
+                "value": "KY",
+                "text": "Cayman Islands"
+            },
+            {
+                "value": "KZ",
+                "text": "Kazakhstan"
+            },
+            {
+                "value": "LB",
+                "text": "Lebanon"
+            },
+            {
+                "value": "LK",
+                "text": "Sri Lanka"
+            },
+            {
+                "value": "LT",
+                "text": "Lithuania"
+            },
+            {
+                "value": "LU",
+                "text": "Luxembourg"
+            },
+            {
+                "value": "LV",
+                "text": "Latvia"
+            },
+            {
+                "value": "LY",
+                "text": "Lybia"
+            },
+            {
+                "value": "MA",
+                "text": "Morocco"
+            },
+            {
+                "value": "MD",
+                "text": "Moldavia"
+            },
+            {
+                "value": "ME",
+                "text": "Montenegro"
+            },
+            {
+                "value": "MH",
+                "text": "Marshall Islands"
+            },
+            {
+                "value": "MK",
+                "text": "Macedonia"
+            },
+            {
+                "value": "ML",
+                "text": "Mali"
+            },
+            {
+                "value": "MM",
+                "text": "Myanmar"
+            },
+            {
+                "value": "MO",
+                "text": "Macau"
+            },
+            {
+                "value": "MQ",
+                "text": "Martinique"
+            },
+            {
+                "value": "MR",
+                "text": "Mauretania"
+            },
+            {
+                "value": "MT",
+                "text": "Malta"
+            },
+            {
+                "value": "MU",
+                "text": "Mauritius"
+            },
+            {
+                "value": "MW",
+                "text": "Malawi"
+            },
+            {
+                "value": "MX",
+                "text": "Mexico"
+            },
+            {
+                "value": "MY",
+                "text": "Malaysia"
+            },
+            {
+                "value": "MZ",
+                "text": "Mozambique"
+            },
+            {
+                "value": "NA",
+                "text": "Namibia"
+            },
+            {
+                "value": "NE",
+                "text": "Niger"
+            },
+            {
+                "value": "NG",
+                "text": "Nigeria"
+            },
+            {
+                "value": "NI",
+                "text": "Nicaragua"
+            },
+            {
+                "value": "NL",
+                "text": "Netherlands"
+            },
+            {
+                "value": "NO",
+                "text": "Norway"
+            },
+            {
+                "value": "NP",
+                "text": "Nepal"
+            },
+            {
+                "value": "NZ",
+                "text": "New Zealand"
+            },
+            {
+                "value": "OM",
+                "text": "Oman"
+            },
+            {
+                "value": "PA",
+                "text": "Panama"
+            },
+            {
+                "value": "PE",
+                "text": "Peru"
+            },
+            {
+                "value": "PH",
+                "text": "Philippines"
+            },
+            {
+                "value": "PK",
+                "text": "Pakistan"
+            },
+            {
+                "value": "PL",
+                "text": "Poland"
+            },
+            {
+                "value": "PR",
+                "text": "Puerto Rico"
+            },
+            {
+                "value": "PT",
+                "text": "Portugal"
+            },
+            {
+                "value": "PY",
+                "text": "Paraguay"
+            },
+            {
+                "value": "QA",
+                "text": "Qatar"
+            },
+            {
+                "value": "RO",
+                "text": "Romania"
+            },
+            {
+                "value": "RS",
+                "text": "Serbia"
+            },
+            {
+                "value": "RU",
+                "text": "Russian Fed."
+            },
+            {
+                "value": "SA",
+                "text": "Saudi Arabia"
+            },
+            {
+                "value": "SC",
+                "text": "Seychelles"
+            },
+            {
+                "value": "SD",
+                "text": "Sudan"
+            },
+            {
+                "value": "SE",
+                "text": "Sweden"
+            },
+            {
+                "value": "SG",
+                "text": "Singapore"
+            },
+            {
+                "value": "SI",
+                "text": "Slovenia"
+            },
+            {
+                "value": "SK",
+                "text": "Slovakia"
+            },
+            {
+                "value": "SM",
+                "text": "San Marino"
+            },
+            {
+                "value": "SN",
+                "text": "Senegal"
+            },
+            {
+                "value": "SR",
+                "text": "Surinam"
+            },
+            {
+                "value": "SV",
+                "text": "El Salvador"
+            },
+            {
+                "value": "SY",
+                "text": "Syria"
+            },
+            {
+                "value": "TC",
+                "text": "Turksh Caicosin"
+            },
+            {
+                "value": "TD",
+                "text": "Chad"
+            },
+            {
+                "value": "TG",
+                "text": "Togo"
+            },
+            {
+                "value": "TH",
+                "text": "Thailand"
+            },
+            {
+                "value": "TJ",
+                "text": "Tadzhikistan"
+            },
+            {
+                "value": "TM",
+                "text": "Turkmenistan"
+            },
+            {
+                "value": "TN",
+                "text": "Tunisia"
+            },
+            {
+                "value": "TR",
+                "text": "Turkey"
+            },
+            {
+                "value": "TT",
+                "text": "Trinidad,Tobago"
+            },
+            {
+                "value": "TW",
+                "text": "Taiwan"
+            },
+            {
+                "value": "TZ",
+                "text": "Tanzania"
+            },
+            {
+                "value": "UA",
+                "text": "Ukraine"
+            },
+            {
+                "value": "UG",
+                "text": "Uganda"
+            },
+            {
+                "value": "US",
+                "text": "USA"
+            },
+            {
+                "value": "UY",
+                "text": "Uruguay"
+            },
+            {
+                "value": "UZ",
+                "text": "Uzbekistan"
+            },
+            {
+                "value": "VE",
+                "text": "Venezuela"
+            },
+            {
+                "value": "VG",
+                "text": "Brit. Virgin Island"
+            },
+            {
+                "value": "VN",
+                "text": "Vietnam"
+            },
+            {
+                "value": "YE",
+                "text": "Yemen"
+            },
+            {
+                "value": "ZA",
+                "text": "South Africa"
+            },
+            {
+                "value": "ZM",
+                "text": "Zambia"
+            },
+            {
+                "value": "ZW",
+                "text": "Zimbabwe"
+            }
+        ],
+    
     "Locales":[
         {"text": "English", "value": "en"},
         {"text": "German", "value": "ua"}

@@ -16,7 +16,7 @@ import { FullLayoutComponent } from './layouts/full-layout/full-layout.component
 import { NgChartjsModule } from 'ng-chartjs';
 import { ThemeConstantService } from './shared/services/theme-constant.service';
 import { TranslateService } from './shared/services/translate.service';
-
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 
 
@@ -39,7 +39,8 @@ export function setupTranslateFactory(
         AppRoutingModule,
         TemplateModule,
         SharedModule,
-        NgChartjsModule
+        NgChartjsModule,
+        Ng2SearchPipeModule
 
 
     ],
